@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Магазин настольных игр</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+  <div class="header__top">
+    <div class="header__content container">
+      <div class="header__content-left">
+        <div class="logo">
+          <img class="logo__img" src="img/logo.png" alt="" />
+        </div>
+        <div class="seach">
+          <form class="seach__forma" action="">
+            <input class="seach__box" type="text" placeholder="Найти игру" />
+            <button class="seach__btn" type="submit"></button>
+          </form>
+        </div>
+      </div>
+      <div class="header__content-right">
+        <div class="header__phone">+7 (495) 911-10-11</div>
+        <ul class="user-list">
+          <li class="user-list__item">
+            <a class="user-list__link" href="#"
+              ><img src="img/user.svg" alt=""
+            /></a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link basket" href="#"
+              ><img src="img/basket.svg" alt="" />
+              <span class="basket__num">1</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="header__menu container">
+      <div class="catalog-mobile__box">
+        <button class="menu-mobile__btn">
+          <div class="menu-mobile__line"></div>
+          <div class="menu-mobile__line"></div>
+          <div class="menu-mobile__line"></div>
+        </button>
+        <a class="link__item catalog-link">Каталог</a>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a class="link__item" href="#">Wharhammer</a>
+        </li>
+        <li class="menu__item">
+          <a class="link__item" href="#">Magic:the Cathering</a>
+        </li>
+        <li class="menu__item">
+          <a class="link__item" href="#">Мероприятия</a>
+        </li>
+        <li class="menu__item">
+          <a class="link__item" href="#">О центре</a>
+        </li>
+        <li class="menu__item">
+          <a class="link__item" href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="menu__social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="" class="socail__link">
+              <img src="img/bi_instagram.svg" alt="social"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a href="" class="socail__link">
+              <img src="img/vk.svg" alt="social"
+            /></a>
+          </li>
+          <li class="social__item">
+            <a href="" class="socail__link">
+              <img src="img/fb.svg" alt="social"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper__headder-catalog">
+    <div class="header-catalog__menu comtainer">
+      <div class="header-catalog__box-category">
+        <div class="header-catalog__box-title">
+          <div class="header-catalog__close">
+            <div class="header-catalog__close-line one"></div>
+            <div class="header-catalog__close-line two"></div>
+          </div>
+          <div class="header-category__title">Все категории</div>
+        </div>
+        <div class="header-category__item click" data-category="0">
+          <button class="header-category__btn click" data-category="0">
+            Настольные игры
+          </button>
+          <div class="header-category__bracket">
+            <img src="img/bracket.svg" alt="bracket" />
+          </div>
+        </div>
+        <div class="header-category__item active click" data-category="1">
+          <button class="header-category__btn click" data-category="1">
+            Warhammer 40000
+          </button>
+          <div class="header-category__bracket active">
+            <img src="img/bracket.svg" alt="bracket" />
+          </div>
+        </div>
+        <div class="header-category__item click" data-category="2">
+          <button class="header-category__btn click" data-category="2">
+            Magic: the Gathering
+          </button>
+          <div class="header-category__bracket">
+            <img src="img/bracket.svg" alt="bracket" />
+          </div>
+        </div>
+        <div class="header-category__item click" data-category="3">
+          <button class="header-category__btn click" data-category="3">
+            Аксессуары для игр
+          </button>
+          <div class="header-category__bracket">
+            <img src="img/bracket.svg" alt="bracket" />
+          </div>
+        </div>
+        <div class="header-category__item click" data-category="4">
+          <button class="header-category__btn click" data-category="4">
+            Краски
+          </button>
+          <div class="header-category__bracket">
+            <img src="img/bracket.svg" alt="bracket" />
+          </div>
+        </div>
+        <div class="header-category__item click" data-category="5">
+          <button class="header-category__btn click" data-category="5">
+            Товары для детей
+          </button>
+          <div class="header-category__bracket">
+            <img src="img/bracket.svg" alt="bracket" />
+          </div>
+        </div>
+        <div class="header-category__item click" data-category="6">
+          <button class="header-category__btn click" data-category="6">
+            Аксессуары для моделизма
+          </button>
+          <div class="header-category__bracket">
+            <img src="img/bracket.svg" alt="bracket" />
+          </div>
+        </div>
+      </div>
+      <div class="header-catalog__box-items">
+        <div class="header-catalog__box-item" data-category="0">
+          <div class="header-group__title">Настольные игры</div>
+          <div class="header-group__box">
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Альтернативные игры </a>
+                <div class="group__count">(9)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Liliput</a>
+                <div class="group__count">(40)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Age of Main </a>
+                <div class="group__count">(125)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href=""> Animals</a>
+                <div class="group__count">(45)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Sports</a>
+                <div class="group__count">(210)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Child for birthday</a>
+                <div class="group__count">(160)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Blood Bowl</a>
+                <div class="group__count">(28)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Titanicus </a>
+                <div class="group__count">(4)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Warcry </a>
+                <div class="group__count">(49)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Warhammer: Underworlds</a>
+                <div class="group__count">(22)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Killtem</a>
+                <div class="group__count">(4)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href=""></a>
+                <div class="group__count"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-catalog__box-item active" data-category="1">
+          <div class="header-group__title">Warhammer 40000</div>
+          <div class="header-group__box">
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Альтернативные миниатюры </a>
+                <div class="group__count">(69)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Warhammer 40k</a>
+                <div class="group__count">(400)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Age of Sigmar </a>
+                <div class="group__count">(263)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href=""> Warcry</a>
+                <div class="group__count">(49)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Nercomunda</a>
+                <div class="group__count">(21)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Lord of the Rings</a>
+                <div class="group__count">(16)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Blood Bowl</a>
+                <div class="group__count">(28)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Titanicus </a>
+                <div class="group__count">(4)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Warcry </a>
+                <div class="group__count">(49)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Warhammer: Underworlds</a>
+                <div class="group__count">(22)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Killtem</a>
+                <div class="group__count">(4)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href=""></a>
+                <div class="group__count"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-catalog__box-item" data-category="3">
+          <div class="header-group__title">Magic: the Gathering</div>
+          <div class="header-group__box">
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Альтернативные миниатюры </a>
+                <div class="group__count">(69)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Warhammer 40k</a>
+                <div class="group__count">(400)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Age of Sigmar </a>
+                <div class="group__count">(263)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href=""> Warcry</a>
+                <div class="group__count">(49)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Nercomunda</a>
+                <div class="group__count">(21)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Lord of the Rings</a>
+                <div class="group__count">(16)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Blood Bowl</a>
+                <div class="group__count">(28)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Titanicus </a>
+                <div class="group__count">(4)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Warcry </a>
+                <div class="group__count">(49)</div>
+              </div>
+              <!--<div class="column__item">
+                <a class="group__link" href="">Warhammer: Underworlds</a>
+                <div class="group__count">(22)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Killtem</a>
+                <div class="group__count">(4)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href=""></a>
+                <div class="group__count"></div>-->
+            </div>
+          </div>
+        </div>
+        <div class="header-catalog__box-item" data-category="4">
+          <div class="header-group__title">Аксессуары для игр</div>
+          <div class="header-group__box">
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Альтернативные игры </a>
+                <div class="group__count">(9)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Liliput</a>
+                <div class="group__count">(40)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Age of Main </a>
+                <div class="group__count">(125)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href=""> Animals</a>
+                <div class="group__count">(45)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Sports</a>
+                <div class="group__count">(210)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Child for birthday</a>
+                <div class="group__count">(160)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Blood Bowl</a>
+                <div class="group__count">(28)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Titanicus </a>
+                <div class="group__count">(4)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Warcry </a>
+                <div class="group__count">(49)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Warhammer: Underworlds</a>
+                <div class="group__count">(22)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Killtem</a>
+                <div class="group__count">(4)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href=""></a>
+                <div class="group__count"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-catalog__box-item" data-category="5">
+          <div class="header-group__title">Краски</div>
+          <div class="header-group__box">
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Альтернативные игры </a>
+                <div class="group__count">(9)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Liliput</a>
+                <div class="group__count">(40)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Age of Main </a>
+                <div class="group__count">(125)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href=""> Animals</a>
+                <div class="group__count">(45)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Sports</a>
+                <div class="group__count">(210)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Child for birthday</a>
+                <div class="group__count">(160)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Blood Bowl</a>
+                <div class="group__count">(28)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Titanicus </a>
+                <div class="group__count">(4)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Warcry </a>
+                <div class="group__count">(49)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Warhammer: Underworlds</a>
+                <div class="group__count">(22)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Killtem</a>
+                <div class="group__count">(4)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href=""></a>
+                <div class="group__count"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-catalog__box-item" data-category="6">
+          <div class="header-group__title">Товары для детей</div>
+          <div class="header-group__box">
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Альтернативные игры </a>
+                <div class="group__count">(9)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Liliput</a>
+                <div class="group__count">(40)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Age of Main </a>
+                <div class="group__count">(125)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href=""> Animals</a>
+                <div class="group__count">(45)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Sports</a>
+                <div class="group__count">(210)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Child for birthday</a>
+                <div class="group__count">(160)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Blood Bowl</a>
+                <div class="group__count">(28)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Titanicus </a>
+                <div class="group__count">(4)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Warcry </a>
+                <div class="group__count">(49)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Warhammer: Underworlds</a>
+                <div class="group__count">(22)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Killtem</a>
+                <div class="group__count">(4)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href=""></a>
+                <div class="group__count"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-catalog__box-item" data-category="7">
+          <div class="header-group__title">Аксессуары для моделизма</div>
+          <div class="header-group__box">
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Альтернативные игры </a>
+                <div class="group__count">(9)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Liliput</a>
+                <div class="group__count">(40)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href="">Age of Main </a>
+                <div class="group__count">(125)</div>
+              </div>
+
+              <div class="column__item">
+                <a class="group__link" href=""> Animals</a>
+                <div class="group__count">(45)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Sports</a>
+                <div class="group__count">(210)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Child for birthday</a>
+                <div class="group__count">(160)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Blood Bowl</a>
+                <div class="group__count">(28)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Titanicus </a>
+                <div class="group__count">(4)</div>
+              </div>
+            </div>
+            <div class="header-group__column">
+              <div class="column__item">
+                <a class="group__link" href="">Warcry </a>
+                <div class="group__count">(49)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Warhammer: Underworlds</a>
+                <div class="group__count">(22)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href="">Killtem</a>
+                <div class="group__count">(4)</div>
+              </div>
+              <div class="column__item">
+                <a class="group__link" href=""></a>
+                <div class="group__count"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="seach-mobile">
+    <form class="seach__forma" action="">
+      <input class="seach__box" type="text" placeholder="Найти игру" />
+      <button class="seach__btn" type="submit"></button>
+    </form>
+  </div>
+</header>
+
+  
+      <section class="slider-product buy-time container">
+        <h2 class="slider-product__title title__section">Успей купить</h2>
+        <div class="slider-product__slider-box">
+          <div class="slider-product__item buy-time__item">
+            <div class="slider-product__box-img">
+              <img
+                class="slider-product__img"
+                src="img/main/image 1.png"
+                alt="image"
+              />
+            </div>
+            <div class="slider-product__point">
+              <div class="slider-product__point-man">2-4</div>
+              <div class="slider-product__point-clock">30-60</div>
+              <div class="slider-product__point-old">18+</div>
+            </div>
+            <div class="slider-product__name">
+              Warhammer 40,000: Chaos Space Marines
+            </div>
+            <div class="slider-product__price">3657</div>
+            <div class="slider-product__btn-box">
+              <button class="slider-product__btn basket">
+                <div>В корзину</div>
+                <div class="basket__img">
+                  <img src="img/main/basket1.svg" alt="basket" />
+                </div>
+              </button>
+              <button class="slider-product__btn one-click">
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="slider-product__item buy-time__item">
+            <div class="slider-product__box-img">
+              <img
+                class="slider-product__img"
+                src="img/main/image 2.png"
+                alt="image"
+              />
+            </div>
+            <div class="slider-product__point">
+              <div class="slider-product__point-man">2-4</div>
+              <div class="slider-product__point-clock">30-60</div>
+              <div class="slider-product__point-old">18+</div>
+            </div>
+            <div class="slider-product__name">На марсе</div>
+            <div class="slider-product__price">3657</div>
+            <div class="slider-product__btn-box">
+              <button class="slider-product__btn basket">
+                <div>В корзину</div>
+                <div class="basket__img">
+                  <img src="img/main/basket1.svg" alt="basket" />
+                </div>
+              </button>
+              <button class="slider-product__btn one-click">
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="slider-product__item buy-time__item">
+            <div class="slider-product__box-img">
+              <img
+                class="slider-product__img"
+                src="img/main/image 3.png"
+                alt="image"
+              />
+            </div>
+            <div class="slider-product__point">
+              <div class="slider-product__point-man">2-4</div>
+              <div class="slider-product__point-clock">30-60</div>
+              <div class="slider-product__point-old">18+</div>
+            </div>
+            <div class="slider-product__name">
+              Broken Realms: Horrek's Dreadlance
+            </div>
+            <div class="slider-product__price">3657</div>
+            <div class="slider-product__btn-box">
+              <button class="slider-product__btn basket">
+                <div>В корзину</div>
+                <div class="basket__img">
+                  <img src="img/main/basket1.svg" alt="basket" />
+                </div>
+              </button>
+              <button class="slider-product__btn one-click">
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="slider-product__item buy-time__item">
+            <div class="slider-product__box-img">
+              <img
+                class="slider-product__img"
+                src="img/main/image 1.png"
+                alt="image"
+              />
+            </div>
+            <div class="slider-product__point">
+              <div class="slider-product__point-man">2-4</div>
+              <div class="slider-product__point-clock">30-60</div>
+              <div class="slider-product__point-old">18+</div>
+            </div>
+            <div class="slider-product__name">
+              Warhammer 40,000: Chaos Space Marines
+            </div>
+            <div class="slider-product__price">3657</div>
+            <div class="slider-product__btn-box">
+              <button class="slider-product__btn basket">
+                <div>В корзину</div>
+                <div class="basket__img">
+                  <img src="img/main/basket1.svg" alt="basket" />
+                </div>
+              </button>
+              <button class="slider-product__btn one-click">
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="slider-product__item buy-time__item">
+            <div class="slider-product__box-img">
+              <img
+                class="slider-product__img"
+                src="img/main/image 2.png"
+                alt="image"
+              />
+            </div>
+            <div class="slider-product__point">
+              <div class="slider-product__point-man">2-4</div>
+              <div class="slider-product__point-clock">30-60</div>
+              <div class="slider-product__point-old">18+</div>
+            </div>
+            <div class="slider-product__name">На марсе</div>
+            <div class="slider-product__price">3657</div>
+            <div class="slider-product__btn-box">
+              <button class="slider-product__btn basket">
+                <div>В корзину</div>
+                <div class="basket__img">
+                  <img src="img/main/basket1.svg" alt="basket" />
+                </div>
+              </button>
+              <button class="slider-product__btn one-click">
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+          <div class="slider-product__item buy-time__item">
+            <div class="slider-product__box-img">
+              <img
+                class="slider-product__img"
+                src="img/main/image 3.png"
+                alt="image"
+              />
+            </div>
+            <div class="slider-product__point">
+              <div class="slider-product__point-man">2-4</div>
+              <div class="slider-product__point-clock">30-60</div>
+              <div class="slider-product__point-old">18+</div>
+            </div>
+            <div class="slider-product__name">
+              Broken Realms: Horrek's Dreadlance
+            </div>
+            <div class="slider-product__price">3657</div>
+            <div class="slider-product__btn-box">
+              <button class="slider-product__btn basket">
+                <div>В корзину</div>
+                <div class="basket__img">
+                  <img src="img/main/basket1.svg" alt="basket" />
+                </div>
+              </button>
+              <button class="slider-product__btn one-click">
+                Купить в 1 клик
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="slider__btn slider-buy__btn left"></button>
+        <button class="slider__btn slider-buy__btn right"></button>
+ 
+      <footer>
+  <div class="footer__wrapper-top">
+    <div class="footer__top container">
+      <div class="footer__location">
+        <div class="footer__log">
+          <img src="img/footer/logo_footer.png" alt="logo" />
+        </div>
+        <div class="footer__address">
+          г. Москва ст.м. Таганская Малый Дровяной переулок 6
+        </div>
+      </div>
+      <div class="footer__catalog">
+        <div class="footer__title-point">Каталог</div>
+        <ul class="footer__catalog-list">
+          <li class="catalog__point-small"><a href="#">Warhammer 40000</a></li>
+          <li class="catalog__point-small"><a href="#">Настольные игры</a></li>
+          <li class="catalog__point-small">
+            <a href="#">Magic: the Gathering</a>
+          </li>
+          <li class="catalog__point-small">
+            <a href="#">Аксессуары для игр</a>
+          </li>
+          <li class="catalog__point-small"><a href="#">Краски</a></li>
+          <li class="catalog__point-small">
+            <a href="#">Аксессуары для моделизма</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__rules">
+        <ul class="footer__rules-list">
+          <li class="footer__point-main"><a href="#">Правила клуба</a></li>
+          <li class="footer__point-main"><a href="#">Мероприятия</a></li>
+          <li class="footer__point-main"><a href="#">О нас</a></li>
+          <li class="footer__point-main"><a href="#">Контакты</a></li>
+          <li class="footer__point-main"><a href="#">Блог</a></li>
+        </ul>
+      </div>
+      <div class="footer__payment">
+        <ul class="footer__paymet-list">
+          <li class="footer__point-main"><a href="#">Оплата и достака</a></li>
+          <li class="footer__point-main"><a href="#">Гарантия и возврат</a></li>
+        </ul>
+      </div>
+      <div class="footer__info">
+        <div class="footer__button">
+          <button class="footer__btn">Заказать звонок</button>
+        </div>
+        <div class="footer__phone">
+          <a href="tel:+74959111011">+7 (495) 911-10-11</a>
+        </div>
+        <div class="footer__mail">msk@magicgoldfish.ru</div>
+        <div class="footer__social">
+          <div class="social__item insta">
+            <img src="img/footer/insta.svg" alt="insta" />
+          </div>
+          <div class="social__item vk">
+            <img src="img/footer/vk.svg" alt="vk" />
+          </div>
+          <div class="social__item fb">
+            <img src="img/footer/vk.svg" alt="fb" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__wrapper-bottom">
+    <div class="footer__bottom container">
+      <div class="footer__political">
+        <div class="political__copy">© 2021 MagicGoldFish.ru</div>
+        <div class="political__link">
+          <a href="#"> Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="footer__card">
+        <div class="card__item">
+          <img src="img/footer/mir.svg" alt="card" />
+        </div>
+        <div class="card__item">
+          <img src="img/footer/visa.svg" alt="card" />
+        </div>
+        <div class="card__item">
+          <img src="img/footer/world.svg" alt="card" />
+        </div>
+      </div>
+      <div class="footer__oferta">
+        <div class="oferta__text">Содержимое не является публичной офертой</div>
+        <div class="oferta__link">
+          <a href="#"> Пользовательское соглашение</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
