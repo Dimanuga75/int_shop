@@ -11,11 +11,13 @@ btnCatalogMenu.addEventListener("click", function (e) {
   e.preventDefault();
   wrapperHeaderCatalog.style.visibility = "visible";
   headerCatalog.style.transform = "translateX(0%)";
+  headerCatalog.style.visibility = "visible";
 });
 closeHeaderCatalog.addEventListener("click", function (e) {
   e.preventDefault();
   wrapperHeaderCatalog.style.visibility = "hidden";
-  headerCatalog.style.transform = "translateX(180%)";
+  headerCatalog.style.transform = "translateX(-100%)";
+  headerCatalog.style.visibility = "hidden";
 });
 
 let categoryItems = document.querySelector(".header-catalog__box-category");
@@ -50,8 +52,6 @@ if (mQuery767.matches) {
       }
     }
   });
-
-  //  categoryBox.style.transform = "translateX(100%)";
 }
 const headerCatalogVisible = function (e) {
   if (e.target.classList.contains("click")) {
@@ -74,8 +74,23 @@ const headerCatalogVisible = function (e) {
     categoryPoint[index].classList.add("active");
   }
 };
-//const  headerCatalogVisibleMobile
 categoryItems.addEventListener("click", headerCatalogVisible);
+let mobileBtnMenu = document.querySelector(".catalog-mobile__box");
+let headerTop = document.querySelector(".header__content");
+
+if (mQuery767.matches) {
+  headerTop.prepend(mobileBtnMenu);
+}
+let footerAddress = document.querySelector(".footer__address");
+let footerRules = document.querySelector(".footer__rules-list");
+if (mQuery767.matches) {
+  footerRules.insertAdjacentElement("afterend", footerAddress);
+}
+let politicalCopy = document.querySelector(".political__copy");
+let ofertaLink = document.querySelector(".oferta__link");
+if (mQuery767.matches) {
+  ofertaLink.insertAdjacentElement("afterend", politicalCopy);
+}
 
 //-------------------------------------------------
 
@@ -84,6 +99,7 @@ window.onload = function () {
   rangeTwo();
   //  playerOne();
   //  playerTwo();
+  faqTextMarginTop();
 };
 
 let categoryMain = document.querySelector(".catalog-main__aside");
@@ -169,7 +185,6 @@ let filterRangeDisplayTwo = document.getElementById("range2");
 let minGap = 1000;
 let rangeTrack = document.querySelector(".aside-filter__price-track");
 let rangeMaxValue = document.getElementById("slider-1").max;
-//let rangeMinValue = document.getElementById("slider-2").min;
 
 function rangeOne() {
   if (
@@ -228,3 +243,45 @@ function fiilColor1() {
   percent2 = (filterPlayerTwo.value / playerMaxValue) * 100;
   rangePlayerTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}%,  #2a2a2a ${percent1}%,  #2a2a2a ${percent2}%, #dadae5 ${percent2}%)`;
 }
+function faqTextMarginTop() {
+  let faqText = document.querySelectorAll(".faq__item-text");
+  let faqTextHeigt = new Array();
+  for (let i = 0; i < faqText.length; i++) {
+    faqTextHeigt.push(
+      Number(getComputedStyle(faqText[i]).height.replace(/[a-zа-яё]/gi, ""))
+    );
+  }
+  for (let k = 0; k < faqTextHeigt.length; k++) {
+    // console.log(faqTextHeigt[k]);
+    faqText[k].style.marginTop = `-${faqTextHeigt[k]}px`;
+  }
+}
+let faqBox = document.querySelector(".faq__box");
+
+faqBox.addEventListener("click", function (e) {
+  if (e.target.classList.contains("faq__item-title")) {
+    e.preventDefault();
+    e.target.classList.toggle("faq__item-title--active");
+  }
+});
+let filterMobileBtn = document.querySelector(".catalog-main__filter-button");
+let asideBox = document.querySelector(".catalog-main__aside");
+let closeBtnCatalog = document.querySelector(".catalog-main__close-button");
+let catalogItemTitle = document.querySelector(".catalog-main__title-items");
+let catalogTitleBox = document.querySelector(".catalog-main__title-box");
+
+filterMobileBtn.onclick = function () {
+  asideBox.style.transform = "translateX(0)";
+  catalogItemTitle.style.display = "none";
+  closeBtnCatalog.style.display = "block";
+  catalogTitleBox.style.alignItems = "unset";
+  filterMobileBtn.classList.add("disable");
+};
+closeBtnCatalog.onclick = function () {
+  console.log("1111111111");
+  asideBox.style.transform = "translateX(-200%)";
+  catalogItemTitle.style.display = "block";
+  closeBtnCatalog.style.display = "none";
+  catalogTitleBox.style.alignItems = "center";
+  filterMobileBtn.classList.remove("disable");
+};
