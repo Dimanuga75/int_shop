@@ -16,7 +16,9 @@
     <div class="header__content container">
       <div class="header__content-left">
         <div class="logo">
-          <img class="logo__img" src="img/logo.png" alt="" />
+          <a href="index.html"
+            ><img class="logo__img" src="img/logo.png" alt=""
+          /></a>
         </div>
         <div class="seach">
           <form class="seach__forma" action="">
@@ -51,7 +53,7 @@
           <div class="menu-mobile__line"></div>
           <div class="menu-mobile__line"></div>
         </button>
-        <a class="link__item catalog-link">Каталог</a>
+        <a class="link__item catalog-link" href="catalog.html">Каталог</a>
       </div>
       <ul class="menu__list">
         <li class="menu__item">
@@ -92,7 +94,7 @@
     </div>
   </div>
   <div class="wrapper__headder-catalog">
-    <div class="header-catalog__menu comtainer">
+    <div class="header-catalog__menu">
       <div class="header-catalog__box-category">
         <div class="header-catalog__box-title">
           <div class="header-catalog__close">
@@ -270,22 +272,10 @@
                 <a class="group__link" href="">Warcry </a>
                 <div class="group__count">(49)</div>
               </div>
-              <div class="column__item">
-                <a class="group__link" href="">Warhammer: Underworlds</a>
-                <div class="group__count">(22)</div>
-              </div>
-              <div class="column__item">
-                <a class="group__link" href="">Killtem</a>
-                <div class="group__count">(4)</div>
-              </div>
-              <div class="column__item">
-                <a class="group__link" href=""></a>
-                <div class="group__count"></div>
-              </div>
             </div>
           </div>
         </div>
-        <div class="header-catalog__box-item" data-category="3">
+        <div class="header-catalog__box-item" data-category="2">
           <div class="header-group__title">Magic: the Gathering</div>
           <div class="header-group__box">
             <div class="header-group__column">
@@ -332,21 +322,10 @@
                 <a class="group__link" href="">Warcry </a>
                 <div class="group__count">(49)</div>
               </div>
-              <!--<div class="column__item">
-                <a class="group__link" href="">Warhammer: Underworlds</a>
-                <div class="group__count">(22)</div>
-              </div>
-              <div class="column__item">
-                <a class="group__link" href="">Killtem</a>
-                <div class="group__count">(4)</div>
-              </div>
-              <div class="column__item">
-                <a class="group__link" href=""></a>
-                <div class="group__count"></div>-->
             </div>
           </div>
         </div>
-        <div class="header-catalog__box-item" data-category="4">
+        <div class="header-catalog__box-item" data-category="3">
           <div class="header-group__title">Аксессуары для игр</div>
           <div class="header-group__box">
             <div class="header-group__column">
@@ -408,7 +387,7 @@
             </div>
           </div>
         </div>
-        <div class="header-catalog__box-item" data-category="5">
+        <div class="header-catalog__box-item" data-category="4">
           <div class="header-group__title">Краски</div>
           <div class="header-group__box">
             <div class="header-group__column">
@@ -470,7 +449,7 @@
             </div>
           </div>
         </div>
-        <div class="header-catalog__box-item" data-category="6">
+        <div class="header-catalog__box-item" data-category="5">
           <div class="header-group__title">Товары для детей</div>
           <div class="header-group__box">
             <div class="header-group__column">
@@ -532,7 +511,7 @@
             </div>
           </div>
         </div>
-        <div class="header-catalog__box-item" data-category="7">
+        <div class="header-catalog__box-item" data-category="6">
           <div class="header-group__title">Аксессуары для моделизма</div>
           <div class="header-group__box">
             <div class="header-group__column">
@@ -594,6 +573,7 @@
             </div>
           </div>
         </div>
+        <!--</div>-->
       </div>
     </div>
   </div>
@@ -604,191 +584,165 @@
     </form>
   </div>
 </header>
-  
-  <div class="breadcrumb container">
-   <ul class="breadcrumb__list">
-      <li class="breadcrumb__list-item"><a href="#">Главная</a></li>
-      <li class="breadcrumb__list-item"><a href="#">Каталог</a></li>
-      <li class="breadcrumb__list-item"><a href="#">Дуэльные игры</a></li>
-   </ul>
-  </div>
-      <section class="slider-product buy-time container">
-        <h2 class="slider-product__title title__section">Успей купить</h2>
-        <div class="slider-product__slider-box">
-          <div class="slider-product__item buy-time__item">
-            <div class="slider-product__box-img">
-              <img
-                class="slider-product__img"
-                src="img/main/image 1.png"
-                alt="image"
-              />
-            </div>
-            <div class="slider-product__point">
-              <div class="slider-product__point-man">2-4</div>
-              <div class="slider-product__point-clock">30-60</div>
-              <div class="slider-product__point-old">18+</div>
-            </div>
-            <div class="slider-product__name">
-              Warhammer 40,000: Chaos Space Marines
-            </div>
-            <div class="slider-product__price">3657</div>
-            <div class="slider-product__btn-box">
-              <button class="slider-product__btn basket">
-                <div>В корзину</div>
-                <div class="basket__img">
-                  <img src="img/main/basket1.svg" alt="basket" />
+
+      <div class="breadcrumb container">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__list-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb__list-item"><a href="#">Каталог</a></li>
+          <li class="breadcrumb__list-item"><a href="#">Настольные игры</a></li>
+          <li class="breadcrumb__list-item">
+            <a href="#">Классические игры</a>
+          </li>
+          <li class="breadcrumb__list-item"><a href="#">Дженга</a></li>
+          <section class="product-item container">
+            <h2 class="product-item__title">Дженга</h2>
+            <div class="product-item__inner">
+              <div class="product-item__info">
+                <div class="product-item__photo">
+                  <div class="product-item__slider-vertical">
+                    <div class="slider-vertical__inner">
+                      <div class="slider-vertical__box">
+                        <img src="img/product/image 126.png" alt="product" />
+                      </div>
+                      <div class="slider-vertical__box">
+                        <img src="img/product/image 127.png" alt="product" />
+                      </div>
+                      <div class="slider-vertical__box">
+                        <img src="img/product/image 128.png" alt="product" />
+                      </div>
+                      <div class="slider-vertical__box">
+                        <img src="img/product/image 126.png" alt="product" />
+                      </div>
+                      <div class="slider-vertical__box">
+                        <img src="img/product/image 126.png" alt="product" />
+                      </div>
+                      <div class="slider-vertical__box">
+                        <img src="img/product/image 127.png" alt="product" />
+                      </div>
+                      <div class="slider-vertical__box">
+                        <img src="img/product/image 128.png" alt="product" />
+                      </div>
+                    </div>
+                    <button class="slider__btn product-item__btn up"></button>
+                    <button class="slider__btn product-item__btn down"></button>
+                  </div>
+                  <div class="product-item__slider-gorizont">
+                    <div class="slider-gorizont__inner">
+                      <div class="slider-gorizont__box">
+                        1<img src="img/product/image 125.png" alt="product" />
+                      </div>
+                      <div class="slider-gorizont__box">
+                        2<img src="img/product/image 127.png" alt="product" />
+                      </div>
+                      <div class="slider-gorizont__box">
+                        3<img src="img/product/image 125.png" alt="product" />
+                      </div>
+                      <div class="slider-gorizont__box">
+                        4<img src="img/product/image 125.png" alt="product" />
+                      </div>
+                      <button
+                        class="slider__btn product-item__btn left"
+                      ></button>
+                      <button
+                        class="slider__btn product-item__btn right"
+                      ></button>
+                    </div>
+                  </div>
                 </div>
-              </button>
-              <button class="slider-product__btn one-click">
-                Купить в 1 клик
-              </button>
-            </div>
-          </div>
-          <div class="slider-product__item buy-time__item">
-            <div class="slider-product__box-img">
-              <img
-                class="slider-product__img"
-                src="img/main/image 2.png"
-                alt="image"
-              />
-            </div>
-            <div class="slider-product__point">
-              <div class="slider-product__point-man">2-4</div>
-              <div class="slider-product__point-clock">30-60</div>
-              <div class="slider-product__point-old">18+</div>
-            </div>
-            <div class="slider-product__name">На марсе</div>
-            <div class="slider-product__price">3657</div>
-            <div class="slider-product__btn-box">
-              <button class="slider-product__btn basket">
-                <div>В корзину</div>
-                <div class="basket__img">
-                  <img src="img/main/basket1.svg" alt="basket" />
+              </div>
+              <div class="product-item__aside">
+                <div class="slider-product__item catalog-time__item">
+                  <div class="slider-product__box-img">
+                    <img
+                      class="slider-product__img"
+                      src="img/main/image 1.png"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="slider-product__point">
+                    <div class="slider-product__point-man">2-4</div>
+                    <div class="slider-product__point-clock">30-60</div>
+                    <div class="slider-product__point-old">18+</div>
+                  </div>
+                  <div class="slider-product__name">
+                    Warhammer 40,000: Chaos Space Marines
+                  </div>
+                  <div class="slider-product__price">3657</div>
+                  <div class="slider-product__btn-box">
+                    <button class="slider-product__btn basket">
+                      <div>В корзину</div>
+                      <div class="basket__img">
+                        <img src="img/main/basket1.svg" alt="basket" />
+                      </div>
+                    </button>
+                    <button class="slider-product__btn one-click">
+                      Купить в 1 клик
+                    </button>
+                  </div>
                 </div>
-              </button>
-              <button class="slider-product__btn one-click">
-                Купить в 1 клик
-              </button>
-            </div>
-          </div>
-          <div class="slider-product__item buy-time__item">
-            <div class="slider-product__box-img">
-              <img
-                class="slider-product__img"
-                src="img/main/image 3.png"
-                alt="image"
-              />
-            </div>
-            <div class="slider-product__point">
-              <div class="slider-product__point-man">2-4</div>
-              <div class="slider-product__point-clock">30-60</div>
-              <div class="slider-product__point-old">18+</div>
-            </div>
-            <div class="slider-product__name">
-              Broken Realms: Horrek's Dreadlance
-            </div>
-            <div class="slider-product__price">3657</div>
-            <div class="slider-product__btn-box">
-              <button class="slider-product__btn basket">
-                <div>В корзину</div>
-                <div class="basket__img">
-                  <img src="img/main/basket1.svg" alt="basket" />
+                <div class="slider-product__item catalog-time__item">
+                  <div class="slider-product__box-img">
+                    <img
+                      class="slider-product__img"
+                      src="img/main/image 1.png"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="slider-product__point">
+                    <div class="slider-product__point-man">2-4</div>
+                    <div class="slider-product__point-clock">30-60</div>
+                    <div class="slider-product__point-old">18+</div>
+                  </div>
+                  <div class="slider-product__name">
+                    Warhammer 40,000: Chaos Space Marines
+                  </div>
+                  <div class="slider-product__price">3657</div>
+                  <div class="slider-product__btn-box">
+                    <button class="slider-product__btn basket">
+                      <div>В корзину</div>
+                      <div class="basket__img">
+                        <img src="img/main/basket1.svg" alt="basket" />
+                      </div>
+                    </button>
+                    <button class="slider-product__btn one-click">
+                      Купить в 1 клик
+                    </button>
+                  </div>
                 </div>
-              </button>
-              <button class="slider-product__btn one-click">
-                Купить в 1 клик
-              </button>
-            </div>
-          </div>
-          <div class="slider-product__item buy-time__item">
-            <div class="slider-product__box-img">
-              <img
-                class="slider-product__img"
-                src="img/main/image 1.png"
-                alt="image"
-              />
-            </div>
-            <div class="slider-product__point">
-              <div class="slider-product__point-man">2-4</div>
-              <div class="slider-product__point-clock">30-60</div>
-              <div class="slider-product__point-old">18+</div>
-            </div>
-            <div class="slider-product__name">
-              Warhammer 40,000: Chaos Space Marines
-            </div>
-            <div class="slider-product__price">3657</div>
-            <div class="slider-product__btn-box">
-              <button class="slider-product__btn basket">
-                <div>В корзину</div>
-                <div class="basket__img">
-                  <img src="img/main/basket1.svg" alt="basket" />
+                <div class="slider-product__item catalog-time__item">
+                  <div class="slider-product__box-img">
+                    <img
+                      class="slider-product__img"
+                      src="img/main/image 1.png"
+                      alt="image"
+                    />
+                  </div>
+                  <div class="slider-product__point">
+                    <div class="slider-product__point-man">2-4</div>
+                    <div class="slider-product__point-clock">30-60</div>
+                    <div class="slider-product__point-old">18+</div>
+                  </div>
+                  <div class="slider-product__name">
+                    Warhammer 40,000: Chaos Space Marines
+                  </div>
+                  <div class="slider-product__price">3657</div>
+                  <div class="slider-product__btn-box">
+                    <button class="slider-product__btn basket">
+                      <div>В корзину</div>
+                      <div class="basket__img">
+                        <img src="img/main/basket1.svg" alt="basket" />
+                      </div>
+                    </button>
+                    <button class="slider-product__btn one-click">
+                      Купить в 1 клик
+                    </button>
+                  </div>
                 </div>
-              </button>
-              <button class="slider-product__btn one-click">
-                Купить в 1 клик
-              </button>
+              </div>
             </div>
-          </div>
-          <div class="slider-product__item buy-time__item">
-            <div class="slider-product__box-img">
-              <img
-                class="slider-product__img"
-                src="img/main/image 2.png"
-                alt="image"
-              />
-            </div>
-            <div class="slider-product__point">
-              <div class="slider-product__point-man">2-4</div>
-              <div class="slider-product__point-clock">30-60</div>
-              <div class="slider-product__point-old">18+</div>
-            </div>
-            <div class="slider-product__name">На марсе</div>
-            <div class="slider-product__price">3657</div>
-            <div class="slider-product__btn-box">
-              <button class="slider-product__btn basket">
-                <div>В корзину</div>
-                <div class="basket__img">
-                  <img src="img/main/basket1.svg" alt="basket" />
-                </div>
-              </button>
-              <button class="slider-product__btn one-click">
-                Купить в 1 клик
-              </button>
-            </div>
-          </div>
-          <div class="slider-product__item buy-time__item">
-            <div class="slider-product__box-img">
-              <img
-                class="slider-product__img"
-                src="img/main/image 3.png"
-                alt="image"
-              />
-            </div>
-            <div class="slider-product__point">
-              <div class="slider-product__point-man">2-4</div>
-              <div class="slider-product__point-clock">30-60</div>
-              <div class="slider-product__point-old">18+</div>
-            </div>
-            <div class="slider-product__name">
-              Broken Realms: Horrek's Dreadlance
-            </div>
-            <div class="slider-product__price">3657</div>
-            <div class="slider-product__btn-box">
-              <button class="slider-product__btn basket">
-                <div>В корзину</div>
-                <div class="basket__img">
-                  <img src="img/main/basket1.svg" alt="basket" />
-                </div>
-              </button>
-              <button class="slider-product__btn one-click">
-                Купить в 1 клик
-              </button>
-            </div>
-          </div>
-        </div>
-        <button class="slider__btn slider-buy__btn left"></button>
-        <button class="slider__btn slider-buy__btn right"></button>
- 
+          </section>
+        </ul>
+      </div>
       <footer>
   <div class="footer__wrapper-top">
     <div class="footer__top container">
@@ -884,6 +838,6 @@
 </footer>
 
     </div>
-    <script src="js/app.min.js"></script>
+    <script src="files/product.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-let btnCatalogMenu = document.querySelector(".catalog-mobile__box");
+let btnCatalogMenu = document.querySelector(".menu-mobile__btn");
 let headerCatalog = document.querySelector(".header-catalog__menu");
 let wrapperHeaderCatalog = document.querySelector(".wrapper__headder-catalog");
 let closeHeaderCatalog = document.querySelector(".header-catalog__close");
@@ -16,7 +16,7 @@ btnCatalogMenu.addEventListener("click", function (e) {
 closeHeaderCatalog.addEventListener("click", function (e) {
   e.preventDefault();
   wrapperHeaderCatalog.style.visibility = "hidden";
-  headerCatalog.style.transform = "translateX(-100%)";
+  headerCatalog.style.transform = "translateX(-150%)";
   headerCatalog.style.visibility = "hidden";
 });
 

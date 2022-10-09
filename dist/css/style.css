@@ -38,7 +38,6 @@ html,
 body {
   box-sizing: border-box;
   width: 100%;
-  overflow-x: hidden;
   outline: none;
 }
 
@@ -85,7 +84,6 @@ body {
   min-width: 320px;
   background-color: #fffbf8;
   width: 100%;
-  overflow-x: hidden;
 }
 
 .wrapper {
@@ -377,11 +375,14 @@ input:-ms-input-placeholder {
   align-items: center;
   column-gap: 11px;
 }
+.t_body {
+  overflow: hidden;
+}
+
 .wrapper__headder-catalog {
   opacity: 1;
   visibility: hidden;
-  position: absolute;
-  display: none !important;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
@@ -393,7 +394,7 @@ input:-ms-input-placeholder {
   align-items: center;
   justify-content: center;
   background-color: rgba(42, 42, 42, 0.65);
-  transition: visibility 0.2s;
+  transition: visibility 0.3s;
   z-index: 999;
 }
 @media (max-width: 767.98px) {
@@ -404,14 +405,15 @@ input:-ms-input-placeholder {
 
 .header-catalog__menu {
   top: 84px;
-  width: 1110px;
   background-color: #fffbf8;
   position: absolute;
   display: flex;
-  justify-content: start;
-  transform: translateX(-100%);
+  justify-content: space-between;
+  transform: translateX(-150%);
   transition: all 0.3s;
+  column-gap: 10px;
   visibility: hidden;
+  top: 90px;
 }
 @media (max-width: 1200px) {
   .header-catalog__menu {
@@ -424,27 +426,38 @@ input:-ms-input-placeholder {
     width: 300px;
     left: auto;
     right: auto;
+    position: relative;
+    top: -10px;
   }
 }
 .header-catalog__box-category {
   padding-right: 0px;
   min-width: 300px;
   position: relative;
-  z-index: 1000;
+  z-index: 30;
+}
+.header-catalog__pro.tt {
+  transform: translateY(100%);
 }
 .header-catalog__box-items {
   padding: 17px 30px;
+  position: relative;
+  display: flex;
+  width: 700px;
 }
 @media (max-width: 767px) {
   .header-catalog__box-items {
     width: 300px;
-    height: 500px;
+    height: 530px;
+    padding: 17px 0px;
+    position: absolute;
   }
 }
 .header-catalog__box-item {
   position: absolute;
-  width: 690px;
-  visibility: hidden;
+  z-index: 33;
+  display: none;
+  background-color: #fff;
 }
 @media (max-width: 767.98px) {
   .header-catalog__box-item {
@@ -457,7 +470,7 @@ input:-ms-input-placeholder {
   }
 }
 .header-catalog__box-item.active {
-  visibility: visible;
+  display: block;
 }
 
 .return__menu-mobile {
@@ -565,6 +578,9 @@ input:-ms-input-placeholder {
   justify-content: space-around;
   align-items: start;
   column-gap: 18px;
+  background-color: #fffbf8;
+  position: relative;
+  z-index: 55;
 }
 @media (max-width: 1200px) {
   .header-group__box {
@@ -1106,12 +1122,9 @@ input:-ms-input-placeholder {
 }
 
 .slider__btn {
-  position: absolute;
   width: 34px;
   height: 34px;
-  position: absolute;
   z-index: 12;
-  top: 220px;
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -1119,6 +1132,8 @@ input:-ms-input-placeholder {
 }
 
 .left {
+  position: absolute;
+  top: 220px;
   left: 0px;
 }
 @media (max-width: 1200px) {
@@ -1128,7 +1143,9 @@ input:-ms-input-placeholder {
 }
 
 .right {
+  position: absolute;
   transform: rotate(180deg);
+  top: 220px;
   right: 0;
 }
 @media (max-width: 1200px) {
@@ -2756,6 +2773,11 @@ input[type=range]:active::-webkit-slider-thumb {
   z-index: 20;
   background-color: #fffbf8;
 }
+@media (max-width: 479.98px) {
+  .page-numder__list {
+    column-gap: 3px;
+  }
+}
 .page-numder__box {
   display: flex;
   justify-content: center;
@@ -2770,11 +2792,18 @@ input[type=range]:active::-webkit-slider-thumb {
   line-height: 22px;
   padding: 3px 9px;
 }
-.page-numder__list-item:nth-child(3) {
+.page-numder__list-item--active {
   border: 1px solid #2a2a2a;
   border-radius: 7px;
 }
 
+.faq__title {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+}
 .faq__box {
   margin-bottom: 85px;
 }
@@ -2793,6 +2822,16 @@ input[type=range]:active::-webkit-slider-thumb {
   z-index: 20;
   background-color: #fffbf8;
 }
+@media (max-width: 767.98px) {
+  .faq__item-title {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .faq__item-title {
+    font-size: 16px;
+  }
+}
 .faq__item-title::after {
   content: "";
   position: absolute;
@@ -2803,6 +2842,11 @@ input[type=range]:active::-webkit-slider-thumb {
   height: 27px;
   transform: translateY(-50%);
   transition: all 0.3s;
+}
+@media (max-width: 767.98px) {
+  .faq__item-title::after {
+    right: -10px;
+  }
 }
 .faq__item-text {
   padding: 0px 19px 19px 19px;
@@ -2827,4 +2871,108 @@ input[type=range]:active::-webkit-slider-thumb {
 .faq__item-text a {
   text-decoration: underline;
   color: #f9a43f;
+}
+.product-item {
+  background-color: aqua;
+}
+.product-item__title {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  margin-top: 9px;
+  margin-bottom: 76px;
+}
+.product-item__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.product-item__photo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  column-gap: 59px;
+}
+.product-item__slider-vertical {
+  position: relative;
+  width: 77px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product-item__btn.up {
+  transform: rotate(90deg);
+  position: absolute;
+  top: -24px;
+  right: auto;
+  left: auto;
+}
+.product-item__btn.down {
+  position: absolute;
+  bottom: -24px;
+  right: auto;
+  left: auto;
+  transform: rotate(-90deg);
+}
+.product-item__slider-gorizont {
+  position: relative;
+}
+.slider-vertical__box {
+  width: 77px;
+  min-height: 75px;
+  background-color: #fff;
+  transform: translateY(0px);
+  transition: all 0.3s;
+}
+.slider-vertical__box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.slider-vertical__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+  width: 77px;
+  height: 275px;
+  overflow: hidden;
+}
+
+.product-item__btn.left {
+  top: 50%;
+  left: -35px;
+  transform: translateY(-50%);
+}
+.product-item__btn.right {
+  top: 50%;
+  right: -35px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.slider-gorizont__inner {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  row-gap: 25px;
+  width: 574px;
+  height: 397px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.slider-gorizont__box {
+  min-width: 574px;
+  height: 397px;
+  transition: all 0.3s;
+}
+.slider-gorizont__box img {
+  height: 100%;
+  width: 100%;
+  object-fit: none;
 }
