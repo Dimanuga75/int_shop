@@ -278,7 +278,6 @@ filterMobileBtn.onclick = function () {
   filterMobileBtn.classList.add("disable");
 };
 closeBtnCatalog.onclick = function () {
-  console.log("1111111111");
   asideBox.style.transform = "translateX(-200%)";
   catalogItemTitle.style.display = "block";
   closeBtnCatalog.style.display = "none";

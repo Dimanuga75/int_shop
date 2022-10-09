@@ -1,3 +1,7 @@
+window.onload = function () {
+  faqTextMarginTop();
+};
+
 let btnCatalogMenu = document.querySelector(".menu-mobile__btn");
 let headerCatalog = document.querySelector(".header-catalog__menu");
 let wrapperHeaderCatalog = document.querySelector(".wrapper__headder-catalog");
@@ -188,18 +192,72 @@ productSliderGorizont.addEventListener("click", function (e) {
         }px)`)
     );
   }
-  //  if (e.target.classList.contains("down")) {
-  //    cointProductSliderVertical--;
-  //    controlProductSliderVertical--;
-  //    if (controlProductSliderVertical === 1) {
-  //      cointProductSliderVertical = productSliderVerticalBox.length - 5;
-  //      controlProductSliderVertical = 6;
-  //    }
-  //    productSliderVerticalBox.forEach(
-  //      (item) =>
-  //        (item.style.transform = `translateY(${
-  //          -cointProductSliderVertical * (stepSliderProductVertical + 25)
-  //        }px)`)
-  //    );
-  //  }
+});
+//FAQ
+function faqTextMarginTop() {
+  let faqText = document.querySelectorAll(".faq__item-text");
+  let faqTextHeigt = new Array();
+  let faqTitle = document.querySelectorAll(".faq__item-title");
+  for (let i = 0; i < faqText.length; i++) {
+    faqTextHeigt.push(
+      Number(getComputedStyle(faqText[i]).height.replace(/[a-zа-яё]/gi, ""))
+    );
+  }
+  for (let k = 0; k < faqTitle.length; k++) {
+    // console.log(faqTextHeigt[k]);
+    // faqText[k].style.marginTop = `-${faqTextHeigt[k]}px`;
+    if (faqTitle[k].classList.contains("faq__item-title--active")) {
+      faqText[k].style.marginTop = "0px";
+      faqText[k].style.opacity = "1";
+    } else {
+      faqText[k].style.marginTop = `-${faqTextHeigt[k]}px`;
+      faqText[k].style.opacity = "0";
+    }
+  }
+}
+let faqBox = document.querySelector(".product-item__aside");
+let faqTitle = document.querySelectorAll(".faq__item-title");
+let faqText = document.querySelectorAll(".faq__item-text");
+let faqTextHeigt1 = new Array();
+for (let i = 0; i < faqText.length; i++) {
+  faqTextHeigt1.push(
+    Number(getComputedStyle(faqText[i]).height.replace(/[a-zа-яё]/gi, ""))
+  );
+}
+faqBox.addEventListener("click", function (e) {
+  if (e.target.classList.contains("faq__item-title")) {
+    e.preventDefault();
+    e.target.classList.toggle("faq__item-title--active");
+    for (let k = 0; k < faqTitle.length; k++) {
+      if (faqTitle[k].classList.contains("faq__item-title--active")) {
+        faqText[k].style.marginTop = "0px";
+        faqText[k].style.opacity = "1";
+      } else {
+        faqText[k].style.marginTop = `-${faqTextHeigt1[k]}px`;
+        faqText[k].style.opacity = "0";
+      }
+    }
+  }
+});
+let faqBoxProduct = document.querySelector(".faq__box");
+
+faqBoxProduct.addEventListener("click", function (e) {
+  if (e.target.classList.contains("faq__item-title")) {
+    e.preventDefault();
+    e.target.classList.toggle("faq__item-title--active");
+  }
+});
+let productItemInfoList = document.querySelector(".product-item__info-list");
+let productItemInfo = document.querySelectorAll(".product__item");
+//let productItemInfoListActive = document.querySelectorAll(".click");
+productItemInfoList.addEventListener("click", function (e) {
+  if (e.target.classList.contains("click")) {
+    e.preventDefault();
+    // e.target.classList.add("active");
+    for (const item of productItemInfo) {
+      item.classList.remove("active");
+    }
+    let index = e.target.dataset.productinfo;
+    productItemInfo[index].classList.add("active");
+  }
 });
