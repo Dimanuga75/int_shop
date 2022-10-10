@@ -145,11 +145,9 @@ productSliderVertical.addEventListener("click", function (e) {
   }
 });
 let cointProductSliderGorizont = 0;
-//let controlProductSliderVertical = 4;
 let productSliderGorizont = document.querySelector(
   ".product-item__slider-gorizont"
 );
-//let buyTimeBox = document.querySelector(".buy-time");
 let productSliderGorizontBox = document.querySelectorAll(
   ".slider-gorizont__box"
 );
@@ -162,13 +160,10 @@ let stepSliderProductGorizont = Number(
 
 productSliderGorizont.addEventListener("click", function (e) {
   e.preventDefault();
-  console.log("22222222");
   if (e.target.classList.contains("left")) {
     cointProductSliderGorizont++;
-    // controlProductSliderVertical++;
     if (cointProductSliderGorizont === productSliderGorizontBox.length) {
       cointProductSliderGorizont = 0;
-      //controlProductSliderVertical = 2;
     }
     productSliderGorizontBox.forEach(
       (item) =>
@@ -178,12 +173,10 @@ productSliderGorizont.addEventListener("click", function (e) {
     );
   }
   if (e.target.classList.contains("right")) {
-    console.log("1111111");
     cointProductSliderGorizont--;
-    // controlProductSliderVertical++;
+
     if (cointProductSliderGorizont < 0) {
       cointProductSliderGorizont = productSliderGorizontBox.length - 1;
-      //controlProductSliderVertical = 2;
     }
     productSliderGorizontBox.forEach(
       (item) =>
@@ -215,7 +208,9 @@ function faqTextMarginTop() {
     }
   }
 }
-let faqBox = document.querySelector(".product-item__aside");
+let faqBox = document.querySelector(
+  ".slider-product__item.catalog-time__item.product-unit"
+);
 let faqTitle = document.querySelectorAll(".faq__item-title");
 let faqText = document.querySelectorAll(".faq__item-text");
 let faqTextHeigt1 = new Array();
@@ -225,6 +220,7 @@ for (let i = 0; i < faqText.length; i++) {
   );
 }
 faqBox.addEventListener("click", function (e) {
+  console.log("111111111111");
   if (e.target.classList.contains("faq__item-title")) {
     e.preventDefault();
     e.target.classList.toggle("faq__item-title--active");
@@ -251,7 +247,7 @@ faqBoxProduct.addEventListener("click", function (e) {
 });
 let productItemInfoList = document.querySelector(".product-item__info-list");
 let productItemInfo = document.querySelectorAll(".product__item");
-//let productItemInfoListActive = document.querySelectorAll(".click");
+
 productItemInfoList.addEventListener("click", function (e) {
   if (e.target.classList.contains("click")) {
     e.preventDefault();
@@ -263,3 +259,15 @@ productItemInfoList.addEventListener("click", function (e) {
     productItemInfo[index].classList.add("active");
   }
 });
+const MobileInner = function () {
+  let productItemPhoto = document.querySelector(".product-item__photo");
+  let productItemInfoMobale = document.querySelector(".product-item__info");
+  let stillBuy = document.querySelector(".still__buy");
+  productItemInfoMobale.prepend(faqBox);
+  productItemInfoMobale.prepend(productItemPhoto);
+  productItemInfoMobale.append(stillBuy);
+};
+
+if (mQuery767.matches) {
+  MobileInner();
+}
