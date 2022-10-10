@@ -2855,7 +2855,7 @@ input[type=range]:active::-webkit-slider-thumb {
   position: relative;
   opacity: 0;
   height: 100%;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .faq__item-title--active + .faq__item-text {
   margin-top: 0 !important;
@@ -2868,6 +2868,7 @@ input[type=range]:active::-webkit-slider-thumb {
   text-decoration: underline;
   color: #f9a43f;
 }
+
 .product-item {
   padding-left: 0;
 }
@@ -2878,7 +2879,7 @@ input[type=range]:active::-webkit-slider-thumb {
   font-size: 40px;
   line-height: 46px;
   margin-top: 9px;
-  margin-bottom: 76px;
+  margin-bottom: 20px;
 }
 .product-item__inner {
   display: flex;
@@ -2890,8 +2891,11 @@ input[type=range]:active::-webkit-slider-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   column-gap: 46px;
+  position: relative;
+  z-index: 50;
+  background-color: #fffbf8;
 }
 .product-item__slider-vertical {
   position: relative;
@@ -3103,11 +3107,19 @@ input[type=range]:active::-webkit-slider-thumb {
   row-gap: 15px;
 }
 
+.faq__box.faq-product {
+  position: relative;
+  z-index: 30;
+}
+
 .product-item__info-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  z-index: 30;
+  background-color: #fffbf8;
 }
 .product-item__description-btn {
   font-style: normal;
@@ -3135,6 +3147,7 @@ input[type=range]:active::-webkit-slider-thumb {
 }
 .product-item__info-box {
   position: relative;
+  z-index: 20;
 }
 .product__item {
   position: absolute;
@@ -3145,6 +3158,7 @@ input[type=range]:active::-webkit-slider-thumb {
 
 .product__item.active {
   display: block;
+  position: relative;
 }
 
 .product-item__look {
@@ -3162,4 +3176,26 @@ input[type=range]:active::-webkit-slider-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.faq__item.porduct__faq {
+  border-bottom: none;
+  border-top: 2px solid rgba(42, 42, 42, 0.12);
+}
+
+.faq__item.porduct__faq:last-child {
+  border-bottom: 2px solid rgba(42, 42, 42, 0.12);
+}
+
+.faq__item-text span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product__item p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  padding-bottom: 21px;
 }

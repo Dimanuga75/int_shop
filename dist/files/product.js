@@ -232,9 +232,11 @@ faqBox.addEventListener("click", function (e) {
       if (faqTitle[k].classList.contains("faq__item-title--active")) {
         faqText[k].style.marginTop = "0px";
         faqText[k].style.opacity = "1";
+        //  faqText[k].style.visibility = "visible";
       } else {
         faqText[k].style.marginTop = `-${faqTextHeigt1[k]}px`;
         faqText[k].style.opacity = "0";
+        //  faqText[k].style.visibility = "hidden";
       }
     }
   }
