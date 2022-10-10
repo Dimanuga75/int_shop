@@ -436,9 +436,6 @@ input:-ms-input-placeholder {
   position: relative;
   z-index: 30;
 }
-.header-catalog__pro.tt {
-  transform: translateY(100%);
-}
 .header-catalog__box-items {
   padding: 17px 30px;
   position: relative;
@@ -602,6 +599,9 @@ input:-ms-input-placeholder {
 
 .group__link {
   word-wrap: normal;
+}
+.group__link.example {
+  color: red;
 }
 
 .seach-mobile {
