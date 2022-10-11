@@ -63,13 +63,13 @@
           <a class="link__item" href="#">Magic:the Cathering</a>
         </li>
         <li class="menu__item">
-          <a class="link__item" href="#">Мероприятия</a>
+          <a class="link__item" href="#event">Мероприятия</a>
         </li>
         <li class="menu__item">
-          <a class="link__item" href="#">О центре</a>
+          <a class="link__item" href="#about">О центре</a>
         </li>
         <li class="menu__item">
-          <a class="link__item" href="#">Контакты</a>
+          <a class="link__item" href="#contact">Контакты</a>
         </li>
       </ul>
       <div class="menu__social">
@@ -592,94 +592,106 @@
           <li class="breadcrumb__list-item"><a href="#">Главная</a></li>
           <li class="breadcrumb__list-item"><a href="#">Корзина</a></li>
         </ul>
-        <section class="user-basket container">
-          <h2 class="product-item__title">Корзина</h2>
-          <div class="user-basket__inner">
-            <div class="poduct__assortment-basket">
-              <div class="product-basket__position" data-position="0">
-                <div class="product__photo-basket">
-                  <img src="img/basket/фото.png" alt="product" />
-                </div>
+      </div>
+      <section class="user-basket container">
+        <h2 class="product-item__title">Корзина</h2>
+        <div class="user-basket__inner">
+          <div class="poduct__assortment-basket">
+            <div class="product-basket__position" data-position="0">
+              <div class="product__photo-basket">
+                <img src="img/basket/фото.png" alt="product" />
+              </div>
+              <div class="product__box-mobile">
                 <div class="product__title-basket">Вампирский Манчкин</div>
-                <div class="product__price-basket">743</div>
-                <div class="product__count-basket">
-                  <div class="count__minus count-change">-</div>
-                  <div class="count__item">2</div>
-                  <div class="count__plus count-change">+</div>
+                <div class="product__price-box">
+                  <div class="product__price-basket-old"></div>
+                  <div class="product__price-basket">743</div>
                 </div>
-                <div class="product__remove-basket">
-                  <img
-                    src="img/basket/fluent_delete-24-filled.svg"
-                    alt="delete"
-                  />
+                <div class="product__box-bottom">
+                  <div class="product__count-basket">
+                    <button class="count__btn" data-set="minus">-</button>
+                    <input class="count__item" type="text" value="2" disabled />
+                    <div class="count__item">шт</div>
+                    <div class="count__btn" data-set="plus">+</div>
+                  </div>
+                  <div class="product__remove-basket">
+                    <img
+                      src="img/basket/fluent_delete-24-filled.svg"
+                      alt="delete"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="user-basket__aside">
-              <div
-                class="slider-product__item catalog-time__item user-basket-item"
-              >
-                <div class="slider-product__price old product-unit">2390</div>
-                <div class="slider-product__price new-price product-unit">
-                  1790
+            <div class="product-basket__position" data-position="1">
+              <div class="product__photo-basket">
+                <img src="img/basket/фото1.png" alt="product" />
+              </div>
+              <div class="product__box-mobile">
+                <div class="product__title-basket">
+                  Warhammer 40,000: Craftworlds Farseer
                 </div>
-                <div class="slider-product__btn-box">
-                  <button class="slider-product__btn basket product-unit">
-                    <div>В корзину</div>
-                    <div class="basket__img">
-                      <img src="img/main/basket1.svg" alt="basket" />
-                    </div>
-                  </button>
-                  <button class="slider-product__btn one-click product-unit">
-                    Купить в 1 клик
-                  </button>
+                <div class="product__price-box">
+                  <div class="product__price-basket-old">6490</div>
+                  <div class="product__price-basket">5990</div>
                 </div>
-                <div class="product-unit__pay">
-                  <div class="faq__item product-unit">
-                    <div
-                      class="faq__item-title faq__item-title--active product-unit"
-                    >
-                      Доставка
-                    </div>
-                    <div class="faq__item-text product-unit">
-                      <div class="product-unit__delivery">
-                        Самовывоз из магазина: сегодня
-                      </div>
-                      <div class="product-unit__delivery">
-                        Самовывоз из 761 пункта: 1-3 дня
-                      </div>
-                      <div class="product-unit__delivery">
-                        Курьерская доставка: 1-3 дня
-                      </div>
-                      <div class="product-unit__delivery">
-                        Доставка почтой: от 3 дней
-                      </div>
-                    </div>
+                <div class="product__box-bottom">
+                  <div class="product__count-basket">
+                    <button class="count__btn" data-set="minus">-</button>
+                    <input class="count__item" type="text" value="1" disabled />
+                    <div class="count__item">шт</div>
+                    <div class="count__btn" data-set="plus">+</div>
                   </div>
-                  <div class="faq__item product-unit">
-                    <div class="faq__item-title product-unit">Оплата</div>
-                    <div class="faq__item-text product-unit">
-                      <div class="product-unit__delivery">100% предоплата</div>
-                      <div class="product-unit__delivery">Оплата курьеру</div>
-                      <div class="product-unit__delivery">
-                        Наложенный платеж через почту
-                      </div>
-                    </div>
+                  <div class="product__remove-basket">
+                    <img
+                      src="img/basket/fluent_delete-24-filled.svg"
+                      alt="delete"
+                    />
                   </div>
-                </div>
-                <div class="slider-product__btn-box">
-                  <button class="slider-product__btn product-question">
-                    Задать вопрос
-                  </button>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+
+          <div class="user-basket__result">
+            <div class="slider-product__item user-basket-item">
+              <div class="basket__rezult">
+                <div class="basket__rezult-title">Сумма:</div>
+                <div class="slider-product__price user-basket">1790</div>
+              </div>
+              <div class="basket__rezult">
+                <div class="basket__rezult-title">Сумма со скидкой:</div>
+                <div class="slider-product__price user-basket__promo">2390</div>
+              </div>
+              <div class="promo">
+                <div class="promo__title">Промокод</div>
+                <form class="promo__forma" action="">
+                  <input
+                    class="promo__box"
+                    type="text"
+                    placeholder="sgu37bjgk_"
+                  />
+                  <button class="promo__btn" type="submit"></button>
+                </form>
+              </div>
+              <div class="slider-product__btn-box">
+                <button class="slider-product__btn basket user-basket">
+                  <div>Оформить</div>
+                  <div class="basket__img">
+                    <img src="img/main/basket1.svg" alt="basket" />
+                  </div>
+                </button>
+                <button class="slider-product__btn one-click user-basket">
+                  Купить в 1 клик
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer>
-  <div class="footer__wrapper-top">
+  <div class="footer__wrapper-top" id="contact">
     <div class="footer__top container">
       <div class="footer__location">
         <div class="footer__log">
@@ -690,7 +702,9 @@
         </div>
       </div>
       <div class="footer__catalog">
-        <div class="footer__title-point">Каталог</div>
+        <div class="footer__title-point">
+          <a href="catalog.html">Каталог</a>
+        </div>
         <ul class="footer__catalog-list">
           <li class="catalog__point-small"><a href="#">Warhammer 40000</a></li>
           <li class="catalog__point-small"><a href="#">Настольные игры</a></li>

@@ -1,3 +1,16 @@
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+  smoothLink.addEventListener("click", function (e) {
+    e.preventDefault();
+    const id = smoothLink.getAttribute("href");
+
+    document.querySelector(id).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
+
 let btnCatalogMenu = document.querySelector(".menu-mobile__btn");
 let headerCatalog = document.querySelector(".header-catalog__menu");
 let wrapperHeaderCatalog = document.querySelector(".wrapper__headder-catalog");
@@ -235,7 +248,6 @@ function playerTwo() {
   ) {
     filterPlayerTwo.value = parseInt(filterPlayerOne.value) + minGapPlayer;
   }
-  //  filterRangeDisplayTwo.textContent = filterPlayerTwo.value;
   fiilColor1();
 }
 function fiilColor1() {
