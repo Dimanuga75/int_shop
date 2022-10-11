@@ -211,36 +211,36 @@ input:-ms-input-placeholder {
 }
 
 @media (max-width: 767.98px) {
-  .seach {
+  .search {
     display: none;
   }
 }
-.seach__forma {
+.search__forma {
   position: relative;
   width: 475px;
 }
 @media (max-width: 1200px) {
-  .seach__forma {
+  .search__forma {
     width: 345px;
   }
 }
 @media (max-width: 991.98px) {
-  .seach__forma {
+  .search__forma {
     width: 225px;
   }
 }
 @media (max-width: 767.98px) {
-  .seach__forma {
+  .search__forma {
     width: 90%;
   }
 }
-.seach__box {
+.search__box {
   padding: 12px;
   width: 100%;
   height: 38px;
   border-radius: 9px;
 }
-.seach__btn {
+.search__btn {
   height: 24px;
   width: 24px;
   position: absolute;
@@ -250,7 +250,7 @@ input:-ms-input-placeholder {
   cursor: pointer;
   border: none;
 }
-.seach__btn::before {
+.search__btn::before {
   content: "";
   position: absolute;
   background-image: url("../img/akar-icons_search.svg");
@@ -613,11 +613,11 @@ input:-ms-input-placeholder {
   color: red;
 }
 
-.seach-mobile {
+.search-mobile {
   display: none;
 }
 @media (max-width: 767.98px) {
-  .seach-mobile {
+  .search-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3544,6 +3544,11 @@ input[type=range]:active::-webkit-slider-thumb {
   font-size: inherit;
   top: 0;
   right: 0px;
+}
+@media (max-width: 479.98px) {
+  .product__price-basket::after {
+    right: 8px;
+  }
 }
 .product__count-basket {
   display: flex;
