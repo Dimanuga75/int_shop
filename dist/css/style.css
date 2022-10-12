@@ -3904,6 +3904,11 @@ input[type=range]:active::-webkit-slider-thumb {
     row-gap: 15px;
   }
 }
+@media (max-width: 479.98px) {
+  .product__box-mobile {
+    margin-right: 15px;
+  }
+}
 
 .product-basket__position {
   display: flex;
@@ -4036,6 +4041,11 @@ input[type=range]:active::-webkit-slider-thumb {
   font-size: 22px;
   line-height: 26px;
   cursor: pointer;
+}
+@media (max-width: 479.98px) {
+  .count__btn {
+    font-size: 42px;
+  }
 }
 .count__item {
   font-style: normal;
