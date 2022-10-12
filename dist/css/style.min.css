@@ -2523,6 +2523,10 @@ input:-ms-input-placeholder {
   max-width: 315px;
 }
 
+.t_body {
+  overflow: hidden;
+}
+
 .breadcrumb {
   margin-bottom: 9px;
   margin-top: 29px;
