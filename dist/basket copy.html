@@ -6,11 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="files/reset.css" />
   <link rel="stylesheet" href="css/style.min.css" />
-  <title>Про нас</title>
+  <title>Корзина</title>
 </head>
 
-  <body>
-    <header>
+  <body id="body">
+    <div class="wrapper">
+      <header>
   <div class="header__top">
     <div class="header__content container">
       <div class="header__content-left">
@@ -140,7 +141,7 @@
           &#10229; &nbsp; Вернуться на сайт
         </button>
       </div>
-      <div class="personal-account__exit mail-exit">
+      <div class="personal-account__exit mail-exit disactive-form">
         <div class="personal-account__title">Войдите или зарегистрируйтесь</div>
         <div class="choose__inner">
           <div class="choose-box">
@@ -168,9 +169,7 @@
             />
           </div>
           <div class="foget__parol">Забыли пароль?</div>
-          <button class="exit__choose phone__exit">
-            Войти с помщью SMS подтверждения
-          </button>
+          <button class="exit__choose phone__exit">Войти с помщью SMS</button>
           <div class="exit__phone-text">
             Войти через аккаунт социальной сети
           </div>
@@ -196,7 +195,7 @@
           &#10229; &nbsp; Вернуться на сайт
         </button>
       </div>
-      <div class="personal-account__exit reg-box">
+      <div class="personal-account__exit reg-box disactive-form">
         <div class="personal-account__title">Войдите или зарегистрируйтесь</div>
         <div class="choose__inner">
           <div class="choose-box">
@@ -263,14 +262,13 @@
               />
             </div>
             <label for="formaagree" class="checkbox__text"
-              ><span class="checkbox__text-item"> Я согласен с &nbsp;</span>
-              <a class="checkbox__person" href="#"
-                >политикой конфеденциальности</a
-              >
-              <span class="checkbox__text-item2">и с &nbsp;</span>
-              <a class="checkbox__person" href="#"
-                >обработкой персональных данных</a
-              >
+              ><span class="checkbox__text-item"> Я согласен с</span>
+              <a class="checkbox__text-item" href="#">политикой</a>
+              <a class="checkbox__text-item" href="#">конфеденциальности</a>
+              <span class="checkbox__text-item">и с</span>
+              <a class="checkbox__text-item" href="#"
+                >обработкой персональных </a
+              ><a class="checkbox__text-item" href="#"> данных</a>
             </label>
           </div>
           <div class="chekbox">
@@ -288,9 +286,11 @@
               />
             </div>
             <label for="news" class="checkbox__text"
-              ><span class="checkbox__text-item1"
-                >Я хочу получать новости и узнавать об акциях первым</span
-              >
+              ><span class="checkbox__text-item"
+                >Я хочу получать новости и
+              </span>
+              <span class="checkbox__text-item">узнавать об </span>
+              <span class="checkbox__text-item">акциях первым</span>
             </label>
           </div>
           <div class="exit__phone-button">
@@ -298,10 +298,10 @@
               Зарегистрироваться
             </button>
           </div>
+          <button class="return__site-reg">
+            &#10229; &nbsp; Вернуться на сайт
+          </button>
         </form>
-        <button class="return__site-reg">
-          &#10229; &nbsp; Вернуться на сайт
-        </button>
       </div>
       <div class="alert__item checked">
         <div class="alert__img-box">
@@ -811,8 +811,110 @@
   </div>
 </header>
 
-    <main>1</main>
-    <footer>
+      <div class="breadcrumb container">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__list-item"><a href="#">Главная</a></li>
+          <li class="breadcrumb__list-item"><a href="#">Корзина</a></li>
+        </ul>
+      </div>
+      <section class="user-basket container">
+        <h2 class="product-item__title">Корзина</h2>
+        <div class="user-basket__inner">
+          <div class="poduct__assortment-basket">
+            <div class="product-basket__position" data-position="0">
+              <div class="product__photo-basket">
+                <img src="img/basket/фото.png" alt="product" />
+              </div>
+              <div class="product__box-mobile">
+                <div class="product__title-basket">Вампирский Манчкин</div>
+                <div class="product__price-box">
+                  <div class="product__price-basket-old"></div>
+                  <div class="product__price-basket">743</div>
+                </div>
+                <div class="product__box-bottom">
+                  <div class="product__count-basket">
+                    <button class="count__btn" data-set="minus">-</button>
+                    <input class="count__item" type="text" value="2" disabled />
+                    <div class="count__item">шт</div>
+                    <div class="count__btn" data-set="plus">+</div>
+                  </div>
+                  <div class="product__remove-basket">
+                    <img
+                      src="img/basket/fluent_delete-24-filled.svg"
+                      alt="delete"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-basket__position" data-position="1">
+              <div class="product__photo-basket">
+                <img src="img/basket/фото1.png" alt="product" />
+              </div>
+              <div class="product__box-mobile">
+                <div class="product__title-basket">
+                  Warhammer 40,000: Craftworlds Farseer
+                </div>
+                <div class="product__price-box">
+                  <div class="product__price-basket-old">6490</div>
+                  <div class="product__price-basket">5990</div>
+                </div>
+                <div class="product__box-bottom">
+                  <div class="product__count-basket">
+                    <button class="count__btn" data-set="minus">-</button>
+                    <input class="count__item" type="text" value="1" disabled />
+                    <div class="count__item">шт</div>
+                    <div class="count__btn" data-set="plus">+</div>
+                  </div>
+                  <div class="product__remove-basket">
+                    <img
+                      src="img/basket/fluent_delete-24-filled.svg"
+                      alt="delete"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-basket__result">
+            <div class="slider-product__item user-basket-item">
+              <div class="basket__rezult">
+                <div class="basket__rezult-title">Сумма:</div>
+                <div class="slider-product__price user-basket">1790</div>
+              </div>
+              <div class="basket__rezult">
+                <div class="basket__rezult-title">Сумма со скидкой:</div>
+                <div class="slider-product__price user-basket__promo">2390</div>
+              </div>
+              <div class="promo">
+                <div class="promo__title">Промокод</div>
+                <form class="promo__forma" action="">
+                  <input
+                    class="promo__box"
+                    type="text"
+                    placeholder="sgu37bjgk_"
+                  />
+                  <button class="promo__btn" type="submit"></button>
+                </form>
+              </div>
+              <div class="slider-product__btn-box">
+                <button class="slider-product__btn basket user-basket">
+                  <div>Оформить</div>
+                  <div class="basket__img">
+                    <img src="img/main/basket1.svg" alt="basket" />
+                  </div>
+                </button>
+                <button class="slider-product__btn one-click user-basket">
+                  Купить в 1 клик
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
   <div class="footer__wrapper-top" id="contact">
     <div class="footer__top container">
       <div class="footer__location">
@@ -908,5 +1010,8 @@
   </div>
 </footer>
 
+    </div>
+    <script src="files/header.js"></script>
+    <script src="files/basket.js"></script>
   </body>
 </html>

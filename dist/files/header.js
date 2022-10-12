@@ -147,57 +147,45 @@ personalAccountBtn.addEventListener("click", function (e) {
   let personalAccountReg = document.querySelector(
     ".personal-account__exit.reg-box"
   );
-  //  let returnSiteBtnReg = document.querySelector(".return__site-reg");
-  personalAccountWrapper.style.visibility = "visible";
-  personalAccountExitPhone.style.transform = "scale(1)";
-  personalAccountExitMail.style.display = "none";
-  personalAccountReg.style.display = "none";
+  personalAccountWrapper.classList.add("active-form");
+  personalAccountExitPhone.classList.add("active-form");
   returnSiteBtnPhone.onclick = function () {
-    personalAccountWrapper.style.visibility = "hidden";
-    personalAccountExitPhone.style.transform = "scale(0)";
+    personalAccountWrapper.classList.remove("active-form");
+    personalAccountExitPhone.classList.remove("active-form");
     body.classList.remove("t_body");
   };
   personalAccountWrapper.addEventListener("click", function (e) {
     if (e.target.classList.contains("mail__exit")) {
       e.preventDefault();
-      personalAccountExitPhone.style.display = "none";
-      personalAccountExitMail.style.display = "block";
-      personalAccountExitMail.style.transform = "scale(1)";
+      personalAccountExitPhone.classList.remove("active-form");
+      personalAccountExitMail.classList.add("active-form");
     }
     if (e.target.classList.contains("phone__exit")) {
       e.preventDefault();
-      personalAccountExitPhone.style.display = "block";
-      personalAccountExitMail.style.display = "none";
+      personalAccountExitPhone.classList.add("active-form");
+      personalAccountExitMail.classList.remove("active-form");
     }
     if (e.target.classList.contains("return__site-mail")) {
       e.preventDefault();
-      personalAccountWrapper.style.visibility = "hidden";
-      personalAccountExitPhone.style.transform = "scale(0)";
-      personalAccountExitPhone.style.display = "block";
-      personalAccountExitMail.style.transform = "scale(0)";
+      personalAccountExitMail.classList.remove("active-form");
+      personalAccountWrapper.classList.remove("active-form");
       body.classList.remove("t_body");
     }
     if (e.target.classList.contains("reg-btn__exit")) {
       e.preventDefault();
-      personalAccountExitPhone.style.display = "none";
-      personalAccountExitMail.style.display = "none";
-      personalAccountExitMail.style.transform = "scale(0)";
-      personalAccountReg.style.display = "block";
-      personalAccountReg.style.transform = "scale(1)";
+      personalAccountExitMail.classList.remove("active-form");
+      personalAccountExitPhone.classList.remove("active-form");
+      personalAccountReg.classList.add("active-form");
     }
     if (e.target.classList.contains("exit-btn__exit")) {
       e.preventDefault();
-      personalAccountReg.style.display = "none";
-      personalAccountExitPhone.style.display = "block";
-      personalAccountExitMail.style.display = "none";
+      personalAccountReg.classList.remove("active-form");
+      personalAccountExitPhone.classList.add("active-form");
     }
     if (e.target.classList.contains("return__site-reg")) {
       e.preventDefault();
-      personalAccountWrapper.style.visibility = "hidden";
-      personalAccountExitPhone.style.transform = "scale(0)";
-      personalAccountExitPhone.style.display = "block";
-      personalAccountExitMail.style.transform = "scale(0)";
-      personalAccountReg.style.transform = "scale(0)";
+      personalAccountReg.classList.remove("active-form");
+      personalAccountWrapper.classList.remove("active-form");
       body.classList.remove("t_body");
     }
   });
@@ -209,7 +197,6 @@ function formValidate(forma) {
   for (let index = 0; index < formReq.length; index++) {
     const input = formReq[index];
     if (input.getAttribute("type") == "checkbox" && input.checked == false) {
-      //formaddError(input);
       document.querySelector(".alert__item.checked").style.transform =
         "scale(1)";
       error++;
@@ -217,11 +204,8 @@ function formValidate(forma) {
   }
   return error;
 }
-//function formaddError() {
-//  formaError.style.visibility = "visible";
-//}
+
 function formremoveError() {
-  //formaError.style.visibility = "hidden";
   inputAlert.forEach((item) => (item.style.transform = "scale(0)"));
 }
 const forma = document.getElementById("forma");

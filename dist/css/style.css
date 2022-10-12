@@ -495,7 +495,7 @@ input:-ms-input-placeholder {
   align-items: center;
   justify-content: center;
   background-color: rgba(42, 42, 42, 0.65);
-  transition: all 0.3s;
+  transition: all 0.2s;
   z-index: 999;
 }
 @media (max-width: 767.98px) {
@@ -528,13 +528,19 @@ input:-ms-input-placeholder {
 }
 
 .personal-account__exit.mail-exit {
-  display: none;
+  visibility: hidden;
+  transform: scale(0);
 }
 
 .personal-account__exit.reg-box {
-  display: none;
+  visibility: hidden;
+  transform: scale(0);
 }
 
+.personal-account__exit.phone-exit {
+  visibility: hidden;
+  transform: scale(0);
+}
 .personal-account__title {
   font-style: normal;
   font-weight: 700;
@@ -561,7 +567,7 @@ input:-ms-input-placeholder {
   align-items: start;
   justify-content: space-between;
   transform: scale(0);
-  transition: all 0.3s;
+  transition: all 0.2s;
   background-color: #fffbf8;
   top: 0;
   left: 0;
@@ -571,6 +577,15 @@ input:-ms-input-placeholder {
     width: 290px;
     padding: 18px;
   }
+}
+
+.personal-account__exit.active-form {
+  visibility: visible;
+  transform: scale(1);
+}
+
+.wrapper__personal-account.active-form {
+  visibility: visible;
 }
 
 .choose__inner {
