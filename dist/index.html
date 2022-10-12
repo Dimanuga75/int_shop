@@ -30,14 +30,12 @@
       <div class="header__content-right">
         <div class="header__phone">+7 (495) 911-10-11</div>
         <ul class="user-list">
-          <li class="user-list__item">
-            <a class="user-list__link" href="#"
-              ><img src="img/user.svg" alt=""
-            /></a>
+          <li class="user-list__item personal">
+            <img src="img/user.svg" alt="personal" />
           </li>
           <li class="user-list__item">
             <a class="user-list__link basket-header" href="basket.html"
-              ><img src="img/basket.svg" alt="" />
+              ><img src="img/basket.svg" alt="basket" />
               <span class="basket__num">1</span>
             </a>
           </li>
@@ -93,6 +91,232 @@
       </div>
     </div>
   </div>
+  <div class="wrapper__personal-account">
+    <div class="wrapper__personal-account2">
+      <div class="personal-account__exit phone-exit">
+        <div class="personal-account__title">Войдите или зарегистрируйтесь</div>
+        <div class="choose__inner">
+          <div class="choose-box">
+            <button class="choose__btn exit">Вход</button>
+          </div>
+          <div class="choose-box">
+            <button class="choose__btn reg-btn__exit">Регистрация</button>
+          </div>
+        </div>
+        <form class="exit__form" action="http://localhost:3000/index.html">
+          <div class="exit__phone-box">
+            <label class="exit__phone-label" for="exit__phone">Телефон:</label>
+            <input
+              class="exit__phone"
+              type="text"
+              placeholder="+7 ___ _______"
+              id="exit__phone"
+            />
+          </div>
+          <button class="exit__choose mail__exit">
+            Войти с помощью пароля
+          </button>
+          <div class="exit__phone-text">
+            Войти через аккаунт социальной сети
+          </div>
+          <div class="form-social__box">
+            <div class="form-social__button">
+              <button class="form-social__fb">
+                <img src="img/header/dashicons_facebook-alt.svg" alt="fb" />
+              </button>
+            </div>
+            <div class="form-social__button">
+              <button class="form-social__vk">
+                <img src="img/header/ei_sc-vk.svg" alt="vk" />
+              </button>
+            </div>
+          </div>
+          <div class="exit__phone-button">
+            <button class="exit__phone-btn" type="submit" id="exit__phone-btn">
+              Получить код в SMS
+            </button>
+          </div>
+        </form>
+        <button class="return__site-phone">
+          &#10229; &nbsp; Вернуться на сайт
+        </button>
+      </div>
+      <div class="personal-account__exit mail-exit">
+        <div class="personal-account__title">Войдите или зарегистрируйтесь</div>
+        <div class="choose__inner">
+          <div class="choose-box">
+            <button class="choose__btn exit">Вход</button>
+          </div>
+          <div class="choose-box">
+            <button class="choose__btn reg-btn__exit">Регистрация</button>
+          </div>
+        </div>
+        <form class="exit__form" action="http://localhost:3000/index.html">
+          <div class="exit__phone-box">
+            <label class="exit__phone-label" for="exit__mail">E-mail </label>
+            <input
+              class="exit__phone"
+              type="text"
+              placeholder="E-mail "
+              id="exit__mail"
+            />
+            <label class="exit__phone-label" for="exit__parol">Пароль</label>
+            <input
+              class="exit__phone"
+              type="text"
+              placeholder="Пароль"
+              id="exit__parol"
+            />
+          </div>
+          <div class="foget__parol">Забыли пароль?</div>
+          <button class="exit__choose phone__exit">Войти с помщью SMS</button>
+          <div class="exit__phone-text">
+            Войти через аккаунт социальной сети
+          </div>
+          <div class="form-social__box">
+            <div class="form-social__button">
+              <button class="form-social__fb">
+                <img src="img/header/dashicons_facebook-alt.svg" alt="fb" />
+              </button>
+            </div>
+            <div class="form-social__button">
+              <button class="form-social__vk">
+                <img src="img/header/ei_sc-vk.svg" alt="vk" />
+              </button>
+            </div>
+          </div>
+          <div class="exit__phone-button">
+            <button class="exit__phone-btn" type="submit" id="exit__mail-btn">
+              Войти
+            </button>
+          </div>
+        </form>
+        <button class="return__site-mail">
+          &#10229; &nbsp; Вернуться на сайт
+        </button>
+      </div>
+      <div class="personal-account__exit reg-box">
+        <div class="personal-account__title">Войдите или зарегистрируйтесь</div>
+        <div class="choose__inner">
+          <div class="choose-box">
+            <button class="choose__btn exit-btn__exit">Вход</button>
+          </div>
+          <div class="choose-box">
+            <button class="choose__btn reg">Регистрация</button>
+          </div>
+        </div>
+        <form
+          class="exit__form"
+          id="forma"
+          action="http://localhost:3000/index.html"
+        >
+          <div class="exit__phone-box">
+            <label class="exit__phone-label" for="name">Имя </label>
+            <input
+              class="exit__phone"
+              type="text"
+              placeholder="Имя"
+              id="name"
+            />
+            <label class="exit__phone-label" for="family">Фамилия: </label>
+            <input
+              class="exit__phone"
+              type="text"
+              placeholder="Фамилия"
+              id="family"
+            />
+            <label class="exit__phone-label" for="login"
+              >E-mail или телефон:
+            </label>
+            <input
+              class="exit__phone"
+              type="text"
+              placeholder="E-mail или телефон"
+              id="login"
+            />
+            <label class="exit__phone-label" for="reg__parol">
+              <div class="reg__label-parolbox">
+                <div class="reg__label-paroltitle">Пароль</div>
+                <div class="reg__label-paroltext">мининум 6 символов</div>
+              </div></label
+            >
+            <input
+              class="exit__phone"
+              type="text"
+              placeholder="****"
+              id="reg__parol"
+            />
+          </div>
+          <div class="chekbox">
+            <input
+              class="checkbox__input req"
+              id="formaagree"
+              type="checkbox"
+              name="agree"
+            />
+            <div class="check__box">
+              <img
+                class="img__check"
+                src="img/header/check_forma.svg"
+                alt="check"
+              />
+            </div>
+            <label for="formaagree" class="checkbox__text"
+              ><span class="checkbox__text-item"> Я согласен с</span>
+              <a class="checkbox__text-item" href="#">политикой</a>
+              <a class="checkbox__text-item" href="#">конфеденциальности</a>
+              <span class="checkbox__text-item">и с</span>
+              <a class="checkbox__text-item" href="#"
+                >обработкой персональных </a
+              ><a class="checkbox__text-item" href="#"> данных</a>
+            </label>
+          </div>
+          <div class="chekbox">
+            <input
+              class="checkbox__input"
+              id="news"
+              type="checkbox"
+              name="news"
+            />
+            <div class="check__box">
+              <img
+                class="img__check"
+                src="img/header/check_forma.svg"
+                alt="check"
+              />
+            </div>
+            <label for="news" class="checkbox__text"
+              ><span class="checkbox__text-item"
+                >Я хочу получать новости и
+              </span>
+              <span class="checkbox__text-item">узнавать об </span>
+              <span class="checkbox__text-item">акциях первым</span>
+            </label>
+          </div>
+          <div class="exit__phone-button">
+            <button class="exit__phone-btn" type="submit" id="reg__btn">
+              Зарегистрироваться
+            </button>
+          </div>
+          <button class="return__site-reg">
+            &#10229; &nbsp; Вернуться на сайт
+          </button>
+        </form>
+      </div>
+      <div class="alert__item checked">
+        <div class="alert__img-box">
+          <img class="alert__img" src="img/header/error.svg" alt="error" />
+        </div>
+        <div class="alert__title">Неправильно заполнены поля:</div>
+        <div class="alert__text">
+          Вы не дали согласие на обработку персональных данных. Это обязательное
+          поле для заполнения.
+        </div>
+        <button class="alert__btn">OK</button>
+      </div>
+    </div>
+  </div>
+
   <div class="wrapper__headder-catalog">
     <div class="header-catalog__menu">
       <div class="header-catalog__box-category">
@@ -1370,6 +1594,7 @@
 </footer>
 
     </div>
+    <script src="files/header.js"></script>
     <script src="js/app.min.js"></script>
   </body>
 </html>
