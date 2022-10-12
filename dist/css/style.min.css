@@ -868,6 +868,8 @@ input:-ms-input-placeholder {
   border-radius: 5px;
   position: absolute;
   z-index: 10;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 9px;
 }
 @media (max-width: 779.98px) {
   .alert__item {
@@ -877,8 +879,8 @@ input:-ms-input-placeholder {
 }
 @media (max-width: 479.98px) {
   .alert__item {
-    width: 290px;
-    left: 0;
+    width: 270px;
+    left: 3%;
   }
 }
 .alert__img-box {
