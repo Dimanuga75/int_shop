@@ -90,7 +90,6 @@ body {
   max-width: 1600px;
   width: 100%;
   min-height: 100%;
-  overflow: hidden;
   padding: 0;
 }
 
@@ -488,9 +487,8 @@ input:-ms-input-placeholder {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 50;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1136,6 +1134,7 @@ input:-ms-input-placeholder {
 
 .slider {
   position: relative;
+  overflow: hidden;
 }
 .slider__info-left {
   position: absolute;
@@ -2017,10 +2016,9 @@ input:-ms-input-placeholder {
   margin-bottom: 85px;
   gap: 20px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .contact {
     flex-direction: column;
-    align-items: start;
   }
 }
 .contact__info {
@@ -2127,6 +2125,12 @@ input:-ms-input-placeholder {
   display: flex;
   flex-direction: column;
   justify-content: start;
+}
+@media (max-width: 991.98px) {
+  .contact__forma {
+    justify-content: center;
+    align-items: center;
+  }
 }
 .contact__forma label {
   font-family: "Trebuchet MS";
@@ -2237,10 +2241,15 @@ input:-ms-input-placeholder {
   height: 629px;
   border: none;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 1200px) {
+  .contact__map iframe {
+    width: 420px;
+  }
+}
+@media (max-width: 991.98px) {
   .contact__map iframe {
     height: 236px;
-    width: 100vw;
+    max-width: 100%;
   }
 }
 
