@@ -222,7 +222,7 @@ function formSend(e) {
   if (error === 0) {
     e.preventDefault();
     body.classList.remove("t_body");
-    window.location.href = "/dist/account.html";
+    window.location.href = "/int_shop/dist/account.html";
     personalAccountReg.classList.remove("active-form");
     personalAccountWrapper.classList.remove("active-form");
   } else {
