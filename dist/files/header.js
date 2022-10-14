@@ -16,8 +16,8 @@ function isWebp() {
     }
   });
 }
-
 isWebp();
+
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
   smoothLink.addEventListener("click", function (e) {
@@ -130,13 +130,18 @@ if (mQuery767.matches) {
   ofertaLink.insertAdjacentElement("afterend", politicalCopy);
 }
 let personalAccountBtn = document.querySelector(".user-list__item.personal");
-
+let personalAccountReg = document.querySelector(
+  ".personal-account__exit.reg-box"
+);
+let personalAccountWrapper = document.querySelector(
+  ".wrapper__personal-account"
+);
 personalAccountBtn.addEventListener("click", function (e) {
   e.preventDefault();
   body.classList.add("t_body");
-  let personalAccountWrapper = document.querySelector(
-    ".wrapper__personal-account"
-  );
+  //  let personalAccountWrapper = document.querySelector(
+  //    ".wrapper__personal-account"
+  //  );
   let personalAccountExitPhone = document.querySelector(
     ".personal-account__exit.phone-exit"
   );
@@ -144,9 +149,9 @@ personalAccountBtn.addEventListener("click", function (e) {
   let personalAccountExitMail = document.querySelector(
     ".personal-account__exit.mail-exit"
   );
-  let personalAccountReg = document.querySelector(
-    ".personal-account__exit.reg-box"
-  );
+  //  let personalAccountReg = document.querySelector(
+  //    ".personal-account__exit.reg-box"
+  //  );
   personalAccountWrapper.classList.add("active-form");
   personalAccountExitPhone.classList.add("active-form");
   returnSiteBtnPhone.onclick = function () {
@@ -212,9 +217,12 @@ const forma = document.getElementById("forma");
 forma.addEventListener("submit", formSend);
 function formSend(e) {
   let error = formValidate(forma);
-
   if (error === 0) {
+    e.preventDefault();
     body.classList.remove("t_body");
+    window.location.href = "/account.html";
+    personalAccountReg.classList.remove("active-form");
+    personalAccountWrapper.classList.remove("active-form");
   } else {
     e.preventDefault();
     setTimeout(formremoveError, 7000);
