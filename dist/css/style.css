@@ -457,6 +457,7 @@ input:-ms-input-placeholder {
   position: relative;
   display: flex;
   width: 700px;
+  z-index: 35;
 }
 @media (max-width: 767px) {
   .header-catalog__box-items {
@@ -464,7 +465,11 @@ input:-ms-input-placeholder {
     height: 530px;
     padding: 17px 0px;
     position: absolute;
+    display: none;
   }
+}
+.header-catalog__box-items.active {
+  display: flex;
 }
 .header-catalog__box-item {
   position: absolute;
@@ -1009,6 +1014,7 @@ input:-ms-input-placeholder {
 .header-category__title {
   position: relative;
   padding: 15px 15px;
+  cursor: pointer;
 }
 .header-category__item {
   padding: 15px 15px 15px 30px;

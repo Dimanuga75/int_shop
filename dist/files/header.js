@@ -39,6 +39,7 @@ const mQuery767 = window.matchMedia("(max-width: 767.98px)");
 const mQuery1200 = window.matchMedia("(max-width: 1199.98px)");
 const mQuery991 = window.matchMedia("(max-width: 991.98px)");
 const mQuery479 = window.matchMedia("(max-width: 479.98px)");
+let categoryBox = document.querySelector(".header-catalog__box-items");
 
 btnCatalogMenu.addEventListener("click", function (e) {
   e.preventDefault();
@@ -59,7 +60,6 @@ let categoryItems = document.querySelector(".header-catalog__box-category");
 let categoryItem = document.querySelectorAll(".header-category__item");
 let categoryBraket = document.querySelectorAll(".header-category__bracket");
 let categoryPoint = document.querySelectorAll(".header-catalog__box-item");
-let categoryBox = document.querySelector(".header-catalog__box-items");
 
 if (mQuery767.matches) {
   for (const item of categoryItem) {
@@ -80,11 +80,12 @@ if (mQuery767.matches) {
     "<div class='header__menu-add'> <a href='#''>Мероприятия</a><a href='#''>Блог</a><a href='#''>О центре</a> <a href='#''>Контакты</a> </div>"
   );
   categoryBox.addEventListener("click", function (e) {
-    e.preventDefault();
     if (e.target.classList.contains("return__menu-mobile")) {
+      e.preventDefault();
       for (const item of categoryPoint) {
         item.classList.remove("active");
       }
+      categoryBox.classList.remove("active");
     }
   });
 }
@@ -94,6 +95,7 @@ const headerCatalogVisible = function (e) {
     for (const item of categoryItem) {
       item.classList.remove("active");
     }
+    categoryBox.classList.add("active");
     e.target.classList.add("active");
     e.target.parentElement.classList.add("active");
     const index = e.target.dataset.category;
