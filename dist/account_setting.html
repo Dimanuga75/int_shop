@@ -814,106 +814,191 @@
       <div class="breadcrumb container">
         <ul class="breadcrumb__list">
           <li class="breadcrumb__list-item"><a href="#">Главная</a></li>
-          <li class="breadcrumb__list-item"><a href="#">Корзина</a></li>
+          <li class="breadcrumb__list-item"><a href="#">Личный кабинет</a></li>
+          <li class="breadcrumb__list-item"><a href="#">Профиль</a></li>
         </ul>
       </div>
-      <section class="user-basket container">
-        <h2 class="product-item__title">Корзина</h2>
-        <div class="user-basket__inner">
-          <div class="poduct__assortment-basket">
-            <div class="product-basket__position" data-position="0">
-              <div class="product__photo-basket">
-                <img src="img/basket/фото.png" alt="product" />
-              </div>
-              <div class="product__box-mobile">
-                <div class="product__title-basket">Вампирский Манчкин</div>
-                <div class="product__price-box">
-                  <div class="product__price-basket-old"></div>
-                  <div class="product__price-basket">743</div>
-                </div>
-                <div class="product__box-bottom">
-                  <div class="product__count-basket">
-                    <button class="count__btn" data-set="minus">-</button>
-                    <input class="count__item" type="text" value="2" disabled />
-                    <div class="count__item">шт</div>
-                    <div class="count__btn" data-set="plus">+</div>
-                  </div>
-                  <div class="product__remove-basket">
-                    <img
-                      src="img/basket/fluent_delete-24-filled.svg"
-                      alt="delete"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="product-basket__position" data-position="1">
-              <div class="product__photo-basket">
-                <img src="img/basket/фото1.png" alt="product" />
-              </div>
-              <div class="product__box-mobile">
-                <div class="product__title-basket">
-                  Warhammer 40,000: Craftworlds Farseer
-                </div>
-                <div class="product__price-box">
-                  <div class="product__price-basket-old">6490</div>
-                  <div class="product__price-basket">5990</div>
-                </div>
-                <div class="product__box-bottom">
-                  <div class="product__count-basket">
-                    <button class="count__btn" data-set="minus">-</button>
-                    <input class="count__item" type="text" value="1" disabled />
-                    <div class="count__item">шт</div>
-                    <div class="count__btn" data-set="plus">+</div>
-                  </div>
-                  <div class="product__remove-basket">
-                    <img
-                      src="img/basket/fluent_delete-24-filled.svg"
-                      alt="delete"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+      <section class="user-account container">
+        <h2 class="user-account__title">Личный кабинет</h2>
+        <div class="user-account__box set">
+          <div class="user-account__menu set">
+            <ul class="user-account__item">
+              <li class="user-account__link">
+                <a href="account.html">Профиль</a>
+              </li>
+              <li class="user-account__link"><a href="#">Заказы</a></li>
+              <li class="user-account__link"><a href="#">Мероприятия</a></li>
+              <li class="user-account__link">
+                <a href="account_setting.html">Настройки</a>
+              </li>
+            </ul>
           </div>
-
-          <div class="user-basket__result">
-            <div class="slider-product__item user-basket-item">
-              <div class="basket__rezult">
-                <div class="basket__rezult-title">Сумма:</div>
-                <div class="slider-product__price user-basket">1790</div>
+          <div class="user-account__aside set">
+            <div class="user-account__info set">
+              <div class="user-account__photo">
+                <img src="img/account/photo.png" alt="photo" />
               </div>
-              <div class="basket__rezult">
-                <div class="basket__rezult-title">Сумма со скидкой:</div>
-                <div class="slider-product__price user-basket__promo">2390</div>
-              </div>
-              <div class="promo">
-                <div class="promo__title">Промокод</div>
-                <form class="promo__forma" action="">
-                  <input
-                    class="promo__box"
-                    type="text"
-                    placeholder="sgu37bjgk_"
-                  />
-                  <button class="promo__btn" type="submit"></button>
-                </form>
-              </div>
-              <div class="slider-product__btn-box">
-                <button class="slider-product__btn basket user-basket">
-                  <div>Оформить</div>
-                  <div class="basket__img">
-                    <img src="img/main/basket1.svg" alt="basket" />
+              <div class="user-account__data">
+                <div class="user-account__setting">
+                  <div class="user-account__name">Иванов Петр</div>
+                  <div class="user-account__change-btn" data-set="0">
+                    изменить
                   </div>
-                </button>
-                <button class="slider-product__btn one-click user-basket">
-                  Купить в 1 клик
-                </button>
+                </div>
+                <div class="user-account__setting">
+                  <div class="user-account__name set">
+                    <div class="user-account__point">Телефон:</div>
+                    <div class="user-account__phone">+7 903 5084301</div>
+                  </div>
+                  <div class="user-account__change-btn" data-set="1">
+                    изменить
+                  </div>
+                </div>
+                <div class="user-account__setting">
+                  <div class="user-account__name set">
+                    <div class="user-account__point">E-mail:</div>
+                    <div class="user-account__phone mail">
+                      ivanov@gmail.coms
+                    </div>
+                  </div>
+                  <div class="user-account__change-btn" data-set="2">
+                    изменить
+                  </div>
+                </div>
+                <div class="user-account__change-mobile" data-set="3">
+                  изменить
+                </div>
+                <div class="form-data__wrapper">
+                  <form class="form-data name">
+                    <div class="form-data__title">Изменить данные</div>
+
+                    <label class="form-data__label" for="form-data__name"
+                      >Ваше имя</label
+                    >
+                    <input
+                      class="form-data__input name"
+                      type="text"
+                      name="name"
+                      placeholder="Петр"
+                      id="form-data__name"
+                    />
+                    <label class="form-data__label" for="form-data__family"
+                      >Ваше имя</label
+                    >
+                    <input
+                      class="form-data__input family"
+                      type="text"
+                      name="family"
+                      placeholder="Иванов"
+                      id="form-data__family"
+                    />
+                    <div class="form-data__button">
+                      <button class="form-data__btn submit-name" type="submit">
+                        Сохранить
+                      </button>
+                      <button class="form-data__return">
+                        &#10229; &nbsp; Вернуться на сайт
+                      </button>
+                    </div>
+                  </form>
+                  <form class="form-data phone">
+                    <div class="form-data__title">Изменить данные</div>
+
+                    <label class="form-data__label" for="form-data__phone"
+                      >Ваш телефон</label
+                    >
+                    <input
+                      class="form-data__input phone"
+                      type="text"
+                      name="phone"
+                      placeholder="+7 ___ _______"
+                      id="form-data__phone"
+                    />
+                    <div class="form-data__button">
+                      <button class="form-data__btn submit-phone" type="submit">
+                        Сохранить
+                      </button>
+                      <button class="form-data__return">
+                        &#10229; &nbsp; Вернуться на сайт
+                      </button>
+                    </div>
+                  </form>
+                  <form class="form-data mail">
+                    <div class="form-data__title">Изменить данные</div>
+
+                    <label class="form-data__label" for="form-data__mail"
+                      >Ваш электронный адрес</label
+                    >
+                    <input
+                      class="form-data__input mail"
+                      type="text"
+                      name="mail"
+                      placeholder="Ваш E-mail"
+                      id="form-data__mail"
+                    />
+                    <div class="form-data__button">
+                      <button class="form-data__btn submit-mail" type="submit">
+                        Сохранить
+                      </button>
+                      <button class="form-data__return">
+                        &#10229; &nbsp; Вернуться на сайт
+                      </button>
+                    </div>
+                  </form>
+                  <div class="form-data menu">
+                    <div class="form-data__title">Какие данные изменить?</div>
+                    <ul class="form-data__menu-mobile">
+                      <li class="user-account__change-btn" data-set="0">
+                        Имя и фамилию
+                      </li>
+                      <li class="user-account__change-btn" data-set="1">
+                        Телефон
+                      </li>
+                      <li class="user-account__change-btn" data-set="2">
+                        E-mail
+                      </li>
+                    </ul>
+                    <button class="form-data__return">
+                      &#10229; &nbsp; Вернуться на сайт
+                    </button>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div class="user-account__forma">
+              <div class="forma-user__title">Остались вопросы?</div>
+              <form class="forma-user" action="#">
+                <label class="forma-user__label">Ваше имя</label>
+                <input
+                  class="forma-user__input"
+                  type="text"
+                  name="name"
+                  placeholder="Имя"
+                />
+                <label class="forma-user__label">Ваш телефон:</label>
+                <input
+                  class="forma-user__input"
+                  type="text"
+                  name="phone"
+                  placeholder="+7 ___ _______"
+                />
+                <label class="forma-user__label text">Ваш комментарий</label>
+                <textarea
+                  class="forma-user__input"
+                  type=""
+                  name="comment"
+                  placeholder="Комментарий"
+                ></textarea>
+                <div class="forma-user__button">
+                  <button class="forma-user__btn" type="submit">
+                    Заказать звонок
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </section>
-
       <footer>
   <div class="footer__wrapper-top" id="contact">
     <div class="footer__top container">
@@ -1012,6 +1097,6 @@
 
     </div>
     <script src="files/header.js"></script>
-    <script src="files/basket.js"></script>
+    <script src="files/accoutn_set.js"></script>
   </body>
 </html>
