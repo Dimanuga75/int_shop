@@ -259,12 +259,27 @@
             </div>
             <label for="formaagree" class="checkbox__text"
               ><span class="checkbox__text-item"> Я согласен с</span>
-              <a class="checkbox__text-item" href="#">политикой</a>
-              <a class="checkbox__text-item" href="#">конфеденциальности</a>
+              <a
+                class="checkbox__text-item"
+                href="https://github.com/Dimanuga75"
+                >политикой</a
+              >
+              <a
+                class="checkbox__text-item"
+                href="https://github.com/Dimanuga75"
+                >конфеденциальности</a
+              >
               <span class="checkbox__text-item">и с</span>
-              <a class="checkbox__text-item" href="#"
+              <a
+                class="checkbox__text-item"
+                href="https://github.com/Dimanuga75"
                 >обработкой персональных </a
-              ><a class="checkbox__text-item" href="#"> данных</a>
+              ><a
+                class="checkbox__text-item"
+                href="https://github.com/Dimanuga75"
+              >
+                данных</a
+              >
             </label>
           </div>
           <div class="chekbox">
@@ -813,8 +828,427 @@
         <ul class="breadcrumb__list">
           <li class="breadcrumb__list-item"><a href="#">Главная</a></li>
           <li class="breadcrumb__list-item"><a href="#">Корзина</a></li>
-          <li class="breadcrumb__list-item"><a href="#">Корзина</a></li>
+          <li class="breadcrumb__list-item">
+            <a href="#">Офрмление заказа</a>
+          </li>
         </ul>
+      </div>
+      <div class="order container">
+        <div class="order__title">Оформление заказа</div>
+        <div class="order__inner">
+          <div class="order__main-box">
+            <form class="order__forma">
+              <div class="delivery__box">
+                <div class="order__group-title">Адрес доставки</div>
+                <div class="delivery__item">
+                  <div class="delivery__ladel">Страна</div>
+                  <input
+                    class="delivery__input"
+                    type="text"
+                    name="country"
+                    placholder="Страна"
+                    required
+                  />
+                </div>
+                <div class="delivery__item">
+                  <div class="delivery__ladel">Город</div>
+                  <input
+                    class="delivery__input"
+                    type="text"
+                    name="town"
+                    placholder="Город"
+                    required
+                  />
+                </div>
+                <div class="delivery__item">
+                  <div class="delivery__ladel">Улица</div>
+                  <input
+                    class="delivery__input"
+                    type="text"
+                    name="street"
+                    placholder="Улица"
+                    required
+                  />
+                </div>
+                <div class="delivery__item">
+                  <div class="delivery__ladel">Дом</div>
+                  <input
+                    class="delivery__input"
+                    type="text"
+                    name="house"
+                    placholder="Дом"
+                    required
+                  />
+                </div>
+                <div class="delivery__item">
+                  <div class="delivery__ladel">Квартира</div>
+                  <input
+                    class="delivery__input"
+                    type="text"
+                    name="flat"
+                    placholder="Квартира"
+                    required
+                  />
+                </div>
+                <div class="delivery__footnote">
+                  Поля обязательные для заполнения
+                </div>
+              </div>
+              <div class="delivery__box">
+                <div class="delivery__title order__group-title">
+                  Способ доставки
+                </div>
+                <div class="delivery__inner">
+                  <div class="delivery__input-box">
+                    <label for="shop" class="delivery__label">
+                      <div class="delivery__img">
+                        <img src="img/order/shop.svg" alt="card" />
+                      </div>
+                      <div class="delivery__text-box">
+                        <div class="delivery__text">Самовывоз из магазина</div>
+                        <div class="delivery__text">Бесплатно, сегодня</div>
+                      </div>
+                    </label>
+                    <input
+                      class="delivery__radio"
+                      id="shop"
+                      type="radio"
+                      name="delivery-way"
+                    />
+                  </div>
+                  <div class="delivery__input-box">
+                    <label for="pickup" class="delivery__label">
+                      <div class="delivery__img">
+                        <img
+                          src="img/order/mdi_cupboard-outline.svg"
+                          alt="cash"
+                        />
+                      </div>
+                      <div class="delivery__text-box">
+                        <div class="delivery__text">
+                          Самовывоз из 761 пункта
+                        </div>
+                        <div class="delivery__text">От 150₽, 1 день</div>
+                      </div>
+                    </label>
+                    <input
+                      class="delivery__radio"
+                      id="pickup"
+                      type="radio"
+                      name="delivery-way"
+                    />
+                  </div>
+                </div>
+                <div class="delivery__inner">
+                  <div class="delivery__input-box">
+                    <label for="curier" class="delivery__label">
+                      <div class="delivery__img">
+                        <img src="img/order/delivery.svg" alt="cash" />
+                      </div>
+                      <div class="delivery__text-box">
+                        <div class="delivery__text">Курьерская доставка</div>
+                        <div class="delivery__text">От 180₽, 1-3 дня</div>
+                      </div>
+                    </label>
+                    <input
+                      class="delivery__radio"
+                      id="curier"
+                      type="radio"
+                      name="delivery-way"
+                    />
+                  </div>
+                  <div class="delivery__input-box">
+                    <label for="pochta" class="delivery__label">
+                      <div class="delivery__img">
+                        <img src="img/order/pochta.svg" alt="cash" />
+                      </div>
+                      <div class="delivery__text-box">
+                        <div class="delivery__text">Доставка почтой</div>
+                        <div class="delivery__text">От 180₽, от 3 дней</div>
+                      </div>
+                    </label>
+                    <input
+                      class="delivery__radio"
+                      id="pochta"
+                      type="radio"
+                      name="delivery-way"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="delivery__box">
+                <div class="delivery__title order__group-title">
+                  Способ оплаты
+                </div>
+                <div class="delivery__inner">
+                  <div class="delivery__input-box">
+                    <label for="card" class="delivery__label">
+                      <div class="delivery__img">
+                        <img src="img/order/card.svg" alt="card" />
+                      </div>
+                      <div class="delivery__text-box">
+                        <div class="delivery__text">Оплата картой</div>
+                        <div class="delivery__text">
+                          карта,Apple pay, Google pay
+                        </div>
+                      </div>
+                    </label>
+                    <input
+                      class="delivery__radio"
+                      id="card"
+                      type="radio"
+                      name="delivery-pay"
+                    />
+                  </div>
+                  <div class="delivery__input-box">
+                    <label for="cash" class="delivery__label">
+                      <div class="delivery__img">
+                        <img src="img/order/cash.svg" alt="cash" />
+                      </div>
+                      <div class="delivery__text-box">
+                        <div class="delivery__text">Оплата наличными</div>
+                        <div class="delivery__text">курьеру при получении</div>
+                      </div>
+                    </label>
+                    <input
+                      class="delivery__radio"
+                      id="cash"
+                      type="radio"
+                      name="delivery-pay"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="delivery__box">
+                <div class="order__group-title">Контактные данные</div>
+                <div class="delivery__item">
+                  <div class="delivery__ladel">Фамилия</div>
+                  <input
+                    class="delivery__input"
+                    type="text"
+                    name="family"
+                    placholder="Фамилия"
+                    required
+                  />
+                </div>
+                <div class="delivery__item">
+                  <div class="delivery__ladel">Имя</div>
+                  <input
+                    class="delivery__input"
+                    type="text"
+                    name="name"
+                    placholder="Имя"
+                    required
+                  />
+                </div>
+                <div class="delivery__item">
+                  <div class="delivery__ladel">E-mail</div>
+                  <input
+                    class="delivery__input"
+                    type="text"
+                    name="email"
+                    placholder="E-mail"
+                    required
+                  />
+                </div>
+                <div class="delivery__item">
+                  <div class="delivery__ladel">Телефон</div>
+                  <input
+                    class="delivery__input"
+                    type="text"
+                    name="phone"
+                    placholder="+7 ___ _______"
+                    required
+                  />
+                </div>
+                <div class="delivery__footnote">
+                  Поля обязательные для заполнения
+                </div>
+                <div class="chekbox record">
+                  <input
+                    class="checkbox__input req"
+                    id="order_agree"
+                    type="checkbox"
+                    name="agree"
+                  />
+                  <div class="check__box">
+                    <img
+                      class="img__check"
+                      src="img/header/check_forma.svg"
+                      alt="check"
+                    />
+                  </div>
+                  <label for="order_agree" class="checkbox__text order__record">
+                    <div class="order__record-agree">
+                      Создать учетную запись
+                    </div>
+                    <!--<span class="checkbox__text-item">и с</span>
+                    <a class="checkbox__text-item" href="#"
+                      >обработкой персональных </a
+                    ><a class="checkbox__text-item" href="#"> данных</a>-->
+                  </label>
+                  <div class="order__record-text">
+                    Нажимая кнопку «Далее», Вы принимаете условия
+                    <a
+                      class="order__record-link"
+                      href="https://github.com/Dimanuga75"
+                      >Публичной оферты</a
+                    >
+                    и даете
+                    <a
+                      class="order__record-link"
+                      href="https://github.com/Dimanuga75"
+                      >согласие на обработку персональных данных.</a
+                    >
+                  </div>
+                </div>
+                <div class="chekbox">
+                  <input
+                    class="checkbox__input req"
+                    id="offerta_agree"
+                    type="checkbox"
+                    name="agree"
+                    checked
+                  />
+                  <div class="check__box">
+                    <img
+                      class="img__check"
+                      src="img/header/check_forma.svg"
+                      alt="check"
+                    />
+                  </div>
+                  <label for="offerta_agree" class="order__record"> </label>
+                  <div class="order__record-text">
+                    С положениями
+                    <a
+                      class="order__record-link"
+                      href="https://github.com/Dimanuga75"
+                      >Публичной оферты
+                    </a>
+                    ознакомлен и согласен
+                  </div>
+                </div>
+                <div class="chekbox">
+                  <input
+                    class="checkbox__input req"
+                    id="personal_agree"
+                    type="checkbox"
+                    name="agree"
+                    checked
+                  />
+                  <div class="check__box">
+                    <img
+                      class="img__check"
+                      src="img/header/check_forma.svg"
+                      alt="check"
+                    />
+                  </div>
+                  <label for="personal_agree" class="order__record"> </label>
+                  <div class="order__record-text">
+                    Даю
+                    <a
+                      class="order__record-link"
+                      href="https://github.com/Dimanuga75"
+                      >согласие на обработку персональных данных
+                    </a>
+                  </div>
+                </div>
+                <div class="order__personal-exit">
+                  Уже зарегистрированы? <a href="account.html">Войдите</a>
+                </div>
+              </div>
+              <div class="order__rezult">
+                <div class="order__rezult-title">Итог</div>
+                <div class="order__rezult-item">
+                  <div class="rezult-item__point">
+                    ..........................................................................................................
+                  </div>
+                  <div class="rezult-item__name">Сумма заказа</div>
+                  <div class="rezult-item__summa">
+                    <div class="rezult-item__sum">7476</div>
+                    <div class="rezult-item__rub">₽</div>
+                  </div>
+                </div>
+                <div class="order__rezult-item">
+                  <div class="rezult-item__point">
+                    ..........................................................................................................
+                  </div>
+                  <div class="rezult-item__name">Стоимость доставки</div>
+                  <div class="rezult-item__summa">
+                    <div class="rezult-item__sum">350</div>
+                    <div class="rezult-item__rub">₽</div>
+                  </div>
+                </div>
+                <div class="order__rezult-item">
+                  <div class="rezult-item__point">
+                    ..........................................................................................................
+                  </div>
+                  <div class="rezult-item__name">Размер скидки</div>
+                  <div class="rezult-item__summa">
+                    <div class="rezult-item__sum">0</div>
+                    <div class="rezult-item__rub">₽</div>
+                  </div>
+                </div>
+                <div class="order__rezult-item">
+                  <div class="rezult-item__point total">
+                    ..........................................................................................................
+                  </div>
+                  <div class="rezult-item__name">Сумма к оплате</div>
+                  <div class="rezult-item__summa total">
+                    <div class="rezult-item__sum">7826</div>
+                    <div class="rezult-item__rub">₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="exit__phone-button order">
+                <button
+                  class="exit__phone-btn order"
+                  type="submit"
+                  id="order__btn"
+                >
+                  Оплатить
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="order__basket">
+            <div class="order__summa">
+              <div class="order__text-item">В корзине</div>
+              <div class="order__product-quantity">3</div>
+              <div class="order__text-item">товара на сумму</div>
+              <div class="order__basket-summa">7476</div>
+              <div class="order__text-item">₽ :</div>
+            </div>
+            <div class="order__position">
+              <div class="position__title">Вампирский Манчкин</div>
+              <div class="position__list">
+                <div class="position__quantity-box">
+                  <div class="position__quantity">1</div>
+                  <div class="position__text">шт</div>
+                </div>
+                <div class="position__quantity-box">
+                  <div class="position__summa">743</div>
+                  <div class="position__text">₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="order__position">
+              <div class="position__title">
+                Warhammer 40,000:Craftworlds Farseer
+              </div>
+              <div class="position__list">
+                <div class="position__quantity-box">
+                  <div class="position__quantity">2</div>
+                  <div class="position__text">шт</div>
+                </div>
+                <div class="position__quantity-box">
+                  <div class="position__summa">5990</div>
+                  <div class="position__text">₽</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <footer>
@@ -915,6 +1349,6 @@
 
     </div>
     <script src="files/header.js"></script>
-    <script src="files/basket.js"></script>
+    <script src="files/order.js"></script>
   </body>
 </html>
