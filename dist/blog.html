@@ -826,101 +826,309 @@
 
       <div class="breadcrumb container">
         <ul class="breadcrumb__list">
-          <li class="breadcrumb__list-item"><a href="#">Главная</a></li>
-          <li class="breadcrumb__list-item"><a href="#">Корзина</a></li>
+          <li class="breadcrumb__list-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumb__list-item"><a href="#">Блог</a></li>
         </ul>
       </div>
-      <section class="user-basket container">
-        <h2 class="product-item__title">Корзина</h2>
-        <div class="user-basket__inner">
-          <div class="poduct__assortment-basket">
-            <div class="product-basket__position" data-position="0">
-              <div class="product__photo-basket">
-                <img src="img/basket/фото.png" alt="product" />
-              </div>
-              <div class="product__box-mobile">
-                <div class="product__title-basket">Вампирский Манчкин</div>
-                <div class="product__price-box">
-                  <div class="product__price-basket-old"></div>
-                  <div class="product__price-basket">743</div>
-                </div>
-                <div class="product__box-bottom">
-                  <div class="product__count-basket">
-                    <button class="count__btn" data-set="minus">-</button>
-                    <input class="count__item" type="text" value="2" disabled />
-                    <div class="count__item">шт</div>
-                    <div class="count__btn" data-set="plus">+</div>
-                  </div>
-                  <div class="product__remove-basket">
-                    <img
-                      src="img/basket/fluent_delete-24-filled.svg"
-                      alt="delete"
-                    />
-                  </div>
-                </div>
-              </div>
+      <section class="blog-page container">
+        <div class="blog-page__title-box">
+          <h2 class="about-page__title">Блог</h2>
+          <div class="blog-page__open-filter">
+            <img src="img/blog/foundation_filter.svg" alt="open" />
+          </div>
+        </div>
+        <div class="blog-page__main">
+          <div class="blog-page__item">
+            <div class="blog-page__img-box">
+              <img
+                class="blog-page__img"
+                src="img/blog/blog1.png"
+                alt="blog-page"
+              />
             </div>
-            <div class="product-basket__position" data-position="1">
-              <div class="product__photo-basket">
-                <img src="img/basket/фото1.png" alt="product" />
+            <div class="blog-page__text">
+              <div class="blog-page__name-box">
+                <div class="blog-page__name">
+                  WARHAMMER 40000: KILL TEAM - T’AU EMPIRE TACTICA
+                </div>
               </div>
-              <div class="product__box-mobile">
-                <div class="product__title-basket">
-                  Warhammer 40,000: Craftworlds Farseer
-                </div>
-                <div class="product__price-box">
-                  <div class="product__price-basket-old">6490</div>
-                  <div class="product__price-basket">5990</div>
-                </div>
-                <div class="product__box-bottom">
-                  <div class="product__count-basket">
-                    <button class="count__btn" data-set="minus">-</button>
-                    <input class="count__item" type="text" value="1" disabled />
-                    <div class="count__item">шт</div>
-                    <div class="count__btn" data-set="plus">+</div>
-                  </div>
-                  <div class="product__remove-basket">
-                    <img
-                      src="img/basket/fluent_delete-24-filled.svg"
-                      alt="delete"
-                    />
-                  </div>
-                </div>
+              <div class="blog-page__discript">
+                В этой статье мы рассмотрим возможности нового стартера Kill
+                Team: T’au Empire и фракции Тау в общем и целом
               </div>
             </div>
           </div>
-
-          <div class="user-basket__result">
-            <div class="slider-product__item user-basket-item">
-              <div class="basket__rezult">
-                <div class="basket__rezult-title">Сумма:</div>
-                <div class="slider-product__price user-basket">1790</div>
-              </div>
-              <div class="basket__rezult">
-                <div class="basket__rezult-title">Сумма со скидкой:</div>
-                <div class="slider-product__price user-basket__promo">2390</div>
-              </div>
-              <div class="promo">
-                <div class="promo__title">Промокод</div>
-                <form class="promo__forma" action="">
-                  <input
-                    class="promo__box"
-                    type="text"
-                    placeholder="sgu37bjgk_"
+          <form class="blog-page__menu">
+            <div class="blog-page__close-filter">
+              <img src="img/blog/close.svg" alt="close" />
+            </div>
+            <div class="blog-page__menu-title">Темы статей</div>
+            <div class="blog-page__list chekbox">
+              <div class="blog-page__point">
+                <input
+                  class="blog-page__input checkbox__input"
+                  type="checkbox"
+                  id="magic"
+                  name="magic"
+                />
+                <div class="check__box blog">
+                  <img
+                    class="img__check"
+                    src="img/blog/Vector.svg"
+                    alt="check"
                   />
-                  <button class="promo__btn" type="submit"></button>
-                </form>
+                </div>
+                <label class="blog-page__label" for="magic"
+                  >Magic: the Cathering
+                </label>
               </div>
-              <div class="slider-product__btn-box">
-                <button class="slider-product__btn basket user-basket">
-                  <div>Оформить</div>
-                  <div class="basket__img">
-                    <img src="img/main/basket1.svg" alt="basket" />
-                  </div>
-                </button>
-                <button class="slider-product__btn one-click user-basket">
-                  Купить в 1 клик
-                </button>
+              <div class="blog-page__point active">
+                <input
+                  class="blog-page__input checkbox__input"
+                  type="checkbox"
+                  id="warhammer"
+                  name="warhammer"
+                  checked
+                />
+                <div class="check__box blog">
+                  <img
+                    class="img__check"
+                    src="img/blog/Vector.svg"
+                    alt="check"
+                  />
+                </div>
+                <label class="blog-page__label" for="warhammer"
+                  >Warhammer 4000
+                </label>
+              </div>
+              <div class="blog-page__point">
+                <input
+                  class="blog-page__input checkbox__input"
+                  type="checkbox"
+                  id="school"
+                />
+                <div class="check__box blog">
+                  <img
+                    class="img__check"
+                    src="img/blog/Vector.svg"
+                    alt="check"
+                  />
+                </div>
+                <label class="blog-page__label" for="school"
+                  >Школа Магии
+                </label>
+              </div>
+              <div class="blog-page__point">
+                <input
+                  class="blog-page__input checkbox__input"
+                  type="checkbox"
+                  id="necr"
+                />
+                <div class="check__box blog">
+                  <img
+                    class="img__check"
+                    src="img/blog/Vector.svg"
+                    alt="check"
+                  />
+                </div>
+                <label class="blog-page__label" for="necr"> Necromunda </label>
+              </div>
+              <div class="blog-page__point">
+                <input
+                  class="blog-page__input checkbox__input"
+                  type="checkbox"
+                  id="infinity"
+                />
+                <div class="check__box blog">
+                  <img
+                    class="img__check"
+                    src="img/blog/Vector.svg"
+                    alt="check"
+                  />
+                </div>
+                <label class="blog-page__label" for="infinity">
+                  Infinity
+                </label>
+              </div>
+              <div class="blog-page__point">
+                <input
+                  class="blog-page__input checkbox__input"
+                  type="checkbox"
+                  id="play"
+                />
+                <div class="check__box blog">
+                  <img
+                    class="img__check"
+                    src="img/blog/Vector.svg"
+                    alt="check"
+                  />
+                </div>
+                <label class="blog-page__label" for="play">
+                  Настольные игры
+                </label>
+              </div>
+              <div class="blog-page__point">
+                <input
+                  class="blog-page__input checkbox__input"
+                  type="checkbox"
+                  id="learn"
+                />
+                <div class="check__box blog">
+                  <img
+                    class="img__check"
+                    src="img/blog/Vector.svg"
+                    alt="check"
+                  />
+                </div>
+                <label class="blog-page__label" for="learn"> Обучение </label>
+              </div>
+              <div class="blog-page__point">
+                <input
+                  class="blog-page__input checkbox__input"
+                  type="checkbox"
+                  id="obzor"
+                />
+                <div class="check__box blog">
+                  <img
+                    class="img__check"
+                    src="img/blog/Vector.svg"
+                    alt="check"
+                  />
+                </div>
+                <label class="blog-page__label" for="obzor">
+                  Обзоры на игры
+                </label>
+              </div>
+              <div class="blog-page__point">
+                <input
+                  class="blog-page__input checkbox__input"
+                  type="checkbox"
+                  id="dust"
+                />
+                <div class="check__box blog">
+                  <img
+                    class="img__check"
+                    src="img/blog/Vector.svg"
+                    alt="check"
+                  />
+                </div>
+                <label class="blog-page__label" for="dust"> Dust 1947 </label>
+              </div>
+              <div class="blog-page__point">
+                <input
+                  class="blog-page__input checkbox__input"
+                  type="checkbox"
+                  id="star"
+                />
+                <div class="check__box blog">
+                  <img
+                    class="img__check"
+                    src="img/blog/Vector.svg"
+                    alt="check"
+                  />
+                </div>
+                <label class="blog-page__label" for="star"
+                  >Star Wars X-Wing
+                </label>
+              </div>
+            </div>
+            <div class="aside-filter__button blog-page">
+              <button class="aside-filter__btn blog-page" type="submit">
+                Применить
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="blog-page__two-item">
+          <div class="blog-page__item">
+            <div class="blog-page__img-box two">
+              <img
+                class="blog-page__img"
+                src="img/blog/blog2.png"
+                alt="blog-page"
+              />
+            </div>
+            <div class="blog-page__text two">
+              <div class="blog-page__name-box">
+                <div class="blog-page__name">ORKS: DA VEHICLES</div>
+              </div>
+              <div class="blog-page__discript">
+                Обзор особенностей всех багги из игры Speed Freeks.
+              </div>
+            </div>
+          </div>
+          <div class="blog-page__item">
+            <div class="blog-page__img-box two">
+              <img
+                class="blog-page__img"
+                src="img/blog/blog3.png"
+                alt="blog-page"
+              />
+            </div>
+            <div class="blog-page__text two">
+              <div class="blog-page__name-box">
+                <div class="blog-page__name">КЛАН ФОКУС: ЗМЕЕКУСЫ</div>
+              </div>
+              <div class="blog-page__discript">
+                Клановые Культуры - Змеекусы
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-page__one-item">
+          <div class="blog-page__item">
+            <div class="blog-page__img-box one">
+              <img
+                class="blog-page__img"
+                src="img/blog/blog4.png"
+                alt="blog-page"
+              />
+            </div>
+            <div class="blog-page__text one">
+              <div class="blog-page__name-box">
+                <div class="blog-page__name">ADEPTUS TITANICUS…ЧТО ЖЕ ЭТО?</div>
+              </div>
+              <div class="blog-page__discript">
+                Рассказываем о настольной игре Adeptus Titanicus и почему в нее
+                стоит попробовать поиграть.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blog-page__two-item">
+          <div class="blog-page__item">
+            <div class="blog-page__img-box two">
+              <img
+                class="blog-page__img"
+                src="img/blog/blog5.png"
+                alt="blog-page"
+              />
+            </div>
+            <div class="blog-page__text two">
+              <div class="blog-page__name-box">
+                <div class="blog-page__name">ORKS: DA VEHICLES</div>
+              </div>
+              <div class="blog-page__discript">
+                Обзор особенностей всех багги из игры Speed Freeks.
+              </div>
+            </div>
+          </div>
+          <div class="blog-page__item">
+            <div class="blog-page__img-box two">
+              <img
+                class="blog-page__img"
+                src="img/blog/blog6.png"
+                alt="blog-page"
+              />
+            </div>
+            <div class="blog-page__text two">
+              <div class="blog-page__name-box">
+                <div class="blog-page__name">КЛАН ФОКУС: ЗМЕЕКУСЫ</div>
+              </div>
+              <div class="blog-page__discript">
+                Клановые Культуры - Змеекусы
               </div>
             </div>
           </div>
@@ -1025,6 +1233,6 @@
 
     </div>
     <script src="files/header.js"></script>
-    <script src="files/basket.js"></script>
+    <script src="files/blog.js"></script>
   </body>
 </html>
