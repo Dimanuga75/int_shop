@@ -151,6 +151,9 @@ faqBoxProduct.addEventListener("click", function (e) {
 });
 let productItemInfoList = document.querySelector(".product-item__info-list");
 let productItemInfo = document.querySelectorAll(".product__item");
+let productItemInfoTitle = document.querySelectorAll(
+  ".product-item__info-list button"
+);
 
 productItemInfoList.addEventListener("click", function (e) {
   if (e.target.classList.contains("click")) {
@@ -159,6 +162,10 @@ productItemInfoList.addEventListener("click", function (e) {
     for (const item of productItemInfo) {
       item.classList.remove("active");
     }
+    for (const items of productItemInfoTitle) {
+      items.classList.remove("active");
+    }
+    e.target.classList.add("active");
     let index = e.target.dataset.productinfo;
     productItemInfo[index].classList.add("active");
   }

@@ -3519,6 +3519,7 @@ input[type=range]:active::-webkit-slider-thumb {
 .product-item__slider-gorizont {
   position: relative;
 }
+
 .slider-vertical__box {
   width: 77px;
   min-height: 75px;
@@ -3547,10 +3548,20 @@ input[type=range]:active::-webkit-slider-thumb {
   left: -35px;
   transform: translateY(-50%);
 }
+@media (max-width: 479.98px) {
+  .product-item__btn.left {
+    left: 0;
+  }
+}
 .product-item__btn.right {
   top: 50%;
   right: -35px;
   transform: translateY(-50%) rotate(180deg);
+}
+@media (max-width: 479.98px) {
+  .product-item__btn.right {
+    right: 0;
+  }
 }
 .product-item__code {
   font-family: "Trebuchet MS";
@@ -3780,13 +3791,13 @@ input[type=range]:active::-webkit-slider-thumb {
 
 @media (max-width: 767.98px) {
   .product-item__btn-still.left {
-    left: -30px;
+    left: 0px;
   }
 }
 
 @media (max-width: 767.98px) {
   .product-item__btn-still.right {
-    right: -30px;
+    right: 0px;
   }
 }
 
@@ -3803,6 +3814,9 @@ input[type=range]:active::-webkit-slider-thumb {
   position: relative;
   z-index: 30;
   background-color: #fffbf8;
+}
+.product-item__info-list button.active {
+  border-bottom: 3px solid #2a2a2a;
 }
 @media (max-width: 991.98px) {
   .product-item__info-list {
@@ -3848,6 +3862,7 @@ input[type=range]:active::-webkit-slider-thumb {
   z-index: 20;
   padding: 0 15px;
 }
+
 .product__item {
   position: absolute;
   top: 0;
@@ -3860,6 +3875,13 @@ input[type=range]:active::-webkit-slider-thumb {
   position: relative;
 }
 
+@media (max-width: 767.98px) {
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .product-item__look {
   margin-top: 25px;
   margin-bottom: 44px;
@@ -3867,7 +3889,12 @@ input[type=range]:active::-webkit-slider-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
+}
+@media (max-width: 767.98px) {
+  .product-item__look {
+    max-width: 255px;
+  }
 }
 .product-item__look-title {
   font-style: normal;
@@ -3883,6 +3910,7 @@ input[type=range]:active::-webkit-slider-thumb {
   column-gap: 25px;
   flex-wrap: wrap;
   row-gap: 15px;
+  position: relative;
 }
 @media (max-width: 955.98px) {
   .product-item__look-product {
@@ -3911,21 +3939,11 @@ input[type=range]:active::-webkit-slider-thumb {
 
 @media (max-width: 767.98px) {
   .product-item__btn-look.left {
-    left: 70px;
-  }
-}
-@media (max-width: 479.98px) {
-  .product-item__btn-look.left {
     left: 0px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .product-item__btn-look.right {
-    right: 70px;
-  }
-}
-@media (max-width: 479.98px) {
   .product-item__btn-look.right {
     right: 0px;
   }
@@ -4374,6 +4392,11 @@ input.count__item:focus {
   justify-content: start;
   align-items: center;
   column-gap: 28px;
+}
+@media (max-width: 479.98px) {
+  .user-account__info {
+    column-gap: 18px;
+  }
 }
 .user-account__info.set {
   align-items: start;
