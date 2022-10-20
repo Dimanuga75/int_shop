@@ -3426,9 +3426,6 @@ input[type=range]:active::-webkit-slider-thumb {
   color: #f9a43f;
 }
 
-.product-item {
-  padding-left: 0;
-}
 .product-item__title {
   font-family: "Trebuchet MS";
   font-style: normal;
@@ -3437,6 +3434,7 @@ input[type=range]:active::-webkit-slider-thumb {
   line-height: 46px;
   margin-top: 9px;
   margin-bottom: 20px;
+  align-self: start;
 }
 @media (max-width: 991.98px) {
   .product-item__title {
@@ -3487,6 +3485,12 @@ input[type=range]:active::-webkit-slider-thumb {
   .product-item__photo {
     justify-content: center;
   }
+}
+.product-item__rules-box {
+  padding: 15px 15px;
+}
+.product-item__rules-box span {
+  line-height: 23px;
 }
 .product-item__slider-vertical {
   position: relative;
