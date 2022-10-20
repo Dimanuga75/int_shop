@@ -3426,6 +3426,12 @@ input[type=range]:active::-webkit-slider-thumb {
   color: #f9a43f;
 }
 
+.product-item {
+  overflow-x: hidden;
+}
+.product-item span {
+  line-height: 23px;
+}
 .product-item__title {
   font-family: "Trebuchet MS";
   font-style: normal;
@@ -3488,9 +3494,6 @@ input[type=range]:active::-webkit-slider-thumb {
 }
 .product-item__rules-box {
   padding: 15px 15px;
-}
-.product-item__rules-box span {
-  line-height: 23px;
 }
 .product-item__slider-vertical {
   position: relative;
